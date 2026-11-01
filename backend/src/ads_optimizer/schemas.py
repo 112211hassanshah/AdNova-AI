@@ -27,5 +27,6 @@ class WorkspaceState(BaseModel):
     datasets: list[DatasetManifest] = Field(default_factory=list)
     revenue_source: str | None = None
     model_status: Literal["not_trained", "trained", "validated"] = "not_trained"
+    hosting_notice: str | None = None
     connected_providers: list[str] = Field(default_factory=list)
     capabilities: list[Capability]

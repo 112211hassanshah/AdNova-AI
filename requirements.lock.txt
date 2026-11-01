@@ -38,3 +38,7 @@ typing_extensions==4.16.0
 tzdata==2026.6
 uvicorn==0.54.0
 xgboost==3.4.1
+
+# Optional hosted workspace adapter and its tests
+psycopg==3.3.6
+psycopg-binary==3.3.6

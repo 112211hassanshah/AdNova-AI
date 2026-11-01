@@ -175,7 +175,14 @@ class Repository:
         shutil.rmtree(self.root / "datasets" / manifest.id, ignore_errors=True)
 
 
-@lru_cache
 def get_repository() -> Repository:
+    from ads_optimizer.hosting.workspace import request_root
+
+    root = request_root.get()
+    return Repository(root) if root is not None else local_repository()
+
+
+@lru_cache
+def local_repository() -> Repository:
     default = Path(__file__).resolve().parents[4] / "data"
     return Repository(Path(os.environ.get("ADS_DATA_DIR", default)))

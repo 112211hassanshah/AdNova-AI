@@ -1,6 +1,7 @@
 """Truthful first-run capability state, independent of HTTP or React state."""
 
 from ads_optimizer.data.repository import Repository
+from ads_optimizer.hosting.workspace import serverless
 from ads_optimizer.ml.store import ModelStore
 from ads_optimizer.schemas import Capability, WorkspaceState
 
@@ -14,6 +15,14 @@ def get_workspace_state(repo: Repository) -> WorkspaceState:
         if selected and j["config"]["dataset_id"] == selected.id and j["status"] == "succeeded"
     ]
     return WorkspaceState(
+        hosting_notice=(
+            "Hosted single-owner workspace · persistent Postgres storage · "
+            "64 MiB workspace limit · 4 MiB uploads. "
+            "Training runs within the request (up to 10,000 rows); keep the page open. "
+            "Big Data experiments run in the local app."
+        )
+        if serverless()
+        else None,
         datasets=datasets,
         selected_dataset=selected,
         dataset_count=len(datasets),
@@ -48,7 +57,7 @@ def get_workspace_state(repo: Repository) -> WorkspaceState:
             Capability(
                 id="benchmarking",
                 phase=2,
-                available=True,
+                available=not serverless(),
                 reason="Run measured 10K–10M synthetic experiments in Big Data Lab; "
                 "optional Spark availability is checked locally.",
             ),

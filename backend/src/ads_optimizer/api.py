@@ -34,6 +34,7 @@ from ads_optimizer.data.reporting import ReportingAnswers, clarify_report
 from ads_optimizer.data.repository import Repository, get_repository
 from ads_optimizer.data.synthetic_generator import generate_frame
 from ads_optimizer.domain import MAX_UPLOAD_BYTES, DomainError, GenerateConfig, ImportOptions
+from ads_optimizer.hosting.workspace import persisted_response, serverless
 from ads_optimizer.ml.contracts import Prediction, TrainingConfig
 from ads_optimizer.ml.infer import predict, reevaluate
 from ads_optimizer.ml.service import cancel_training, dependency_versions, readiness, start_training
@@ -100,7 +101,9 @@ async def domain_error(_request: Request, error: DomainError):
 
 @app.middleware("http")
 async def local_write_guard(request: Request, call_next):
-    hosted = os.environ.get("ADS_HOSTED") == "1" or os.environ.get("RENDER") == "true"
+    hosted = (
+        os.environ.get("ADS_HOSTED") == "1" or os.environ.get("RENDER") == "true" or serverless()
+    )
     password = os.environ.get("ADS_ACCESS_PASSWORD", "")
     if hosted or password:
         if request.url.path != "/api/v1/health":
@@ -145,11 +148,23 @@ async def local_write_guard(request: Request, call_next):
                 status_code=403, content={"detail": "Cross-site workspace writes are not allowed."}
             )
         length = request.headers.get("content-length", "0")
-        if not length.isdigit() or int(length) > MAX_UPLOAD_BYTES:
+        upload_limit = 4 * 1024 * 1024 if serverless() else MAX_UPLOAD_BYTES
+        if not length.isdigit() or int(length) > upload_limit:
             return JSONResponse(
-                status_code=413, content={"detail": "The request exceeds the 10 MiB limit."}
+                status_code=413,
+                content={
+                    "detail": "The request exceeds the upload limit (4 MiB hosted; 10 MiB local)."
+                },
             )
-    response = await call_next(request)
+    if serverless() and request.url.path not in {
+        "/api/v1/health",
+        "/openapi.json",
+        "/docs",
+        "/redoc",
+    }:
+        response = await persisted_response(request, call_next)
+    else:
+        response = await call_next(request)
     response.headers["Cache-Control"] = "no-store"
     return response
 
@@ -337,8 +352,12 @@ def campaign_template():
 @app.get("/api/v1/lab")
 def lab_state(repo: Repo):
     store = LabStore(repo.root)
+    runtime = {**environment(repo.root), "hosted": serverless()}
+    if serverless():
+        for engine in runtime["engines"]:
+            engine.update(available=False, reason="Run Big Data experiments in the local app.")
     return {
-        "environment": environment(repo.root),
+        "environment": runtime,
         "methodology": METHODOLOGY,
         "datasets": [dataset_summary(d) for d in store.datasets()],
         "jobs": [public_job(j) for j in store.jobs()],

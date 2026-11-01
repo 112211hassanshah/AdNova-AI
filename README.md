@@ -292,4 +292,4 @@ workspace when those artifacts are unwanted.
 
 ## Protected hosting
 
-For the user-authorized Vercel + FastAPI deployment, follow [docs/hosting.md](docs/hosting.md). Hosted mode requires private access settings and persistent storage; the default launcher remains local.
+For the user-authorized Vercel-only Next.js + FastAPI deployment, follow [docs/vercel.md](docs/vercel.md). Hosted mode requires private access settings and persistent storage; the default launcher remains local.

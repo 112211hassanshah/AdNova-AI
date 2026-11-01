@@ -8,6 +8,7 @@ export type WorkspaceState = {
   api_version: "v1";
   phase: number;
   mode: "local_single_user";
+  hosting_notice?: string | null;
   workspace_id: string;
   currency: "PKR";
   dataset_count: number;
@@ -29,7 +30,7 @@ export async function getWorkspace(
   });
   if (!response.ok)
     throw new Error(
-      "The backend service is unavailable. For a hosted workspace, check the backend deployment and API_ORIGIN setting. For local use, start both services with npm run dev.",
+      "The backend service is unavailable. For Vercel, check Python deployment logs and database configuration. For local use, start both services with npm run dev.",
     );
   const data = await response.json();
   if (

@@ -146,14 +146,14 @@ export async function api<T>(path: string, init: RequestInit = {}): Promise<T> {
   } catch (error) {
     if (init.signal?.aborted) throw error;
     throw new Error(
-      "Could not reach your local service. Check that both servers are running, then retry.",
+      "Could not reach the backend service. Check its deployment or local servers, then retry.",
     );
   }
   const body = await response.json().catch(() => null);
   if (!response.ok) {
     const message =
       response.status >= 500
-        ? "The service could not finish this action. Your existing datasets are unchanged. Please retry."
+        ? "The service could not confirm this action. Refresh your workspace before retrying."
         : typeof body?.detail === "string"
           ? body.detail
           : Array.isArray(body?.detail)

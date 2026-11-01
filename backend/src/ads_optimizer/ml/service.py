@@ -107,6 +107,12 @@ def readiness(repo, config):
     setup = None
     try:
         source = repo.get(config.dataset_id)
+        from ads_optimizer.hosting.workspace import serverless
+
+        if serverless() and source.rows > 10000:
+            raise DomainError(
+                "Hosted training supports up to 10,000 rows. Train larger reports locally."
+            )
         setup = manifest_setup(
             source,
             repo.read(source.id)
@@ -139,14 +145,23 @@ def dependency_versions():
         try:
             result[name] = version(name)
         except PackageNotFoundError:
-            result[name] = None
+            try:
+                result[name] = version("xgboost-cpu") if name == "xgboost" else None
+            except PackageNotFoundError:
+                result[name] = None
     return result
 
 
 def start_training(repo, config):
     if not repo.selected() or repo.selected().id != config.dataset_id:
         raise DomainError("Select this dataset before training; reports cannot be pooled.", 409)
+    from ads_optimizer.hosting.workspace import serverless
+
     manifest, _, _, _ = prepare(repo, config)
+    if serverless() and manifest.rows > 10000:
+        raise DomainError(
+            "Hosted training supports up to 10,000 rows. Train larger reports locally."
+        )
     store = ModelStore(repo.root)
     # Serialize source deletion and model creation using the campaign catalog lock.
     with repo.connect() as conn:
@@ -160,6 +175,11 @@ def start_training(repo, config):
         source = repo.root / "datasets" / manifest.id / "campaigns.parquet"
         shutil.copyfile(source, folder / "input.parquet")
         store.update(job["id"], input_sha256=sha256(folder / "input.parquet"))
+        if serverless():
+            from ads_optimizer.ml.worker import run
+
+            run(repo.root, job["id"])
+            return public_job(store.get(job["id"]))
         with (folder / "worker.log").open("w") as log:
             process = subprocess.Popen(
                 [

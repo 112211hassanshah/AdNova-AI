@@ -1,5 +1,33 @@
 # Progress
 
+## Vercel-only hosting adaptation — 2026-11-01 (deployment verification pending)
+
+User chose Vercel only and no paid services; Render setup was abandoned without
+creating a service. Added a Python function alongside Next.js, production API
+routing, CPU-only Linux XGBoost dependencies and a transactional Postgres workspace
+adapter. Authenticated invocations restore isolated scratch files and serialize
+through a database row lock; success follows persistence commit. Streaming exports
+finish before cleanup. Failed actions roll back; archive size/path/link checks
+bound restoration. Local service defaults and full academic lab remain intact.
+
+Hosted UI discloses 4 MiB requests, 64 MiB workspace and request-bound training up
+to 10K rows. Hosted Big Data job creation is rejected and controls disabled; this
+is an execution boundary, not a fabricated successful benchmark. Training uses the
+existing actual train/evaluate/reload code within the request, not a detached
+worker that could disappear after an HTTP response. Existing forecast/data
+integrity policies unchanged. No API key or access password added to source.
+
+Verification so far: **205 backend tests passed**, including fresh-invocation
+campaign/model restoration, an actual hosted-path XGBoost fit, export buffering,
+storage rollback/failure, missing storage and archive traversal/size/link tests.
+Postgres tests use a transaction double; real cloud verification is separate.
+Ruff, formatting, type/lint and production build passed. User approved Neon terms
+and connecting its **Free** database to Production only; Vercel confirms it is
+Available and connected. Preview/Development excluded. Source inclusion outside
+frontend was already enabled; disabled skipping backend-only changes. No paid
+resources provisioned. Live deployment and desktop/mobile review are pending.
+See `docs/vercel.md` for architecture, limits, retention and setup.
+
 ## Protected single-owner hosting preparation — 2026-11-01
 
 Prepared the user-provided Vercel origin `https://black-stone-8p52.vercel.app`

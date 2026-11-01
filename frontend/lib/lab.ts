@@ -74,6 +74,7 @@ export type LabJob = {
   benchmark_version?: string;
 };
 export type LabEnvironment = {
+  hosted?: boolean;
   os: string;
   architecture: string;
   cpu: string;

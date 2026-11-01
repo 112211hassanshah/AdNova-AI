@@ -1,3 +1,9 @@
+# Hosting alternatives
+
+**Current user choice: Vercel only, with free persistent Postgres storage.**
+Follow [vercel.md](vercel.md). The earlier Render setup below was abandoned before
+a service was created; no paid plan is authorized.
+
 # Protected single-owner hosting
 
 This is a password-protected shared workspace, not merchant accounts or production

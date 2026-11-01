@@ -26,3 +26,7 @@ User-authorized protected hosting extension (November 1, 2026): Vercel frontend
 and separately hosted FastAPI may use shared single-owner Basic authentication
 over HTTPS. See `docs/hosting.md`. Local use stays unauthenticated by default;
 this does not implement multi-user accounts or Phase 7 platform connections.
+
+November 1 hosting update: the user selected Vercel-only hosting with no paid
+services. See `docs/vercel.md` for bounded serverless execution, persistent private
+Postgres snapshots and hosted lab limits. Preserve the complete local workflow.

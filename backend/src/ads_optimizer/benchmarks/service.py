@@ -49,6 +49,13 @@ def public_job(job):
 
 
 def start_job(store: LabStore, config: ExperimentConfig):
+    from ads_optimizer.hosting.workspace import serverless
+
+    if serverless():
+        raise DomainError(
+            "Big Data experiments require the local app. Vercel does not run detached lab workers.",
+            409,
+        )
     if config.dataset_id:
         dataset = store.get_dataset(config.dataset_id)
         if dataset["config"] != config.generation_config():

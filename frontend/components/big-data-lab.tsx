@@ -187,6 +187,9 @@ export function BigDataLab({ dataOnly = false }: { dataOnly?: boolean }) {
             : "Big Data Lab is for the university experiment, not required for a small merchant’s daily use."}
         </p>
       </div>
+      {state.environment.hosted && (
+        <Notice text="Big Data experiments run in the local app. Detached Spark/MapReduce workers are unavailable on this Vercel deployment; no benchmark has been run here." />
+      )}
       {(error || actionError) && <Notice text={actionError || error} error />}
       <div className="lab-setup-grid">
         <section className="card lab-form-card">
@@ -202,7 +205,9 @@ export function BigDataLab({ dataOnly = false }: { dataOnly?: boolean }) {
               : "One dataset, the same platform totals, and real measured repeats."}
           </p>
           <form onSubmit={start} className="lab-form">
-            <fieldset disabled={busy || !!running}>
+            <fieldset
+              disabled={busy || !!running || !!state.environment.hosted}
+            >
               {!dataOnly && (
                 <label className="lab-input-select">
                   Experiment input

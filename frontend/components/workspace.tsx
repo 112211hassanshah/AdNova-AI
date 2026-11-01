@@ -273,6 +273,11 @@ export function Workspace({ section }: { section: string }) {
                 What’s available <ArrowUpRight size={13} />
               </Link>
             </div>
+            {state?.hosting_notice && (
+              <div className="notice" role="status">
+                <p>{state.hosting_notice}</p>
+              </div>
+            )}
             {section === "help" && <Help />}
             {error ? (
               <div className="notice error" role="alert">

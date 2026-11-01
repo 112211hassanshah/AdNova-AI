@@ -7,6 +7,7 @@ import psutil
 
 from ads_optimizer.data.repository import Repository
 from ads_optimizer.domain import DomainError
+from ads_optimizer.hosting.workspace import serverless
 from ads_optimizer.ml.contracts import TrainingConfig
 from ads_optimizer.ml.service import prepare, sha256
 from ads_optimizer.ml.store import ModelStore, now
@@ -22,8 +23,8 @@ def run(data_root, job_id):
     def check():
         if store.get(job_id)["cancel_requested"]:
             raise Stopped()
-        if time.monotonic() - started > 600:
-            raise DomainError("Training exceeded the 10-minute limit. Use a smaller report.")
+        if time.monotonic() - started > (180 if serverless() else 600):
+            raise DomainError("Training exceeded the execution limit. Use a smaller report.")
         if psutil.Process().memory_info().rss > 2 * 1024**3:
             raise DomainError("Training exceeded its 2 GiB worker memory ceiling.")
 
