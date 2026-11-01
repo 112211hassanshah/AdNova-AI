@@ -29,7 +29,7 @@ export async function getWorkspace(
   });
   if (!response.ok)
     throw new Error(
-      "The local service is unavailable. Start both services with npm run dev, then retry.",
+      "The backend service is unavailable. For a hosted workspace, check the backend deployment and API_ORIGIN setting. For local use, start both services with npm run dev.",
     );
   const data = await response.json();
   if (

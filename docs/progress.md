@@ -1,5 +1,32 @@
 # Progress
 
+## Protected single-owner hosting preparation — 2026-11-01
+
+Prepared the user-provided Vercel origin `https://black-stone-8p52.vercel.app`
+for a separately hosted Python backend. Added server-side Basic authentication
+(username `owner`) on both frontend and backend, constant-time credential checks,
+fail-closed hosted configuration and configurable exact write origins. Render is
+automatically treated as hosted; only the minimal health endpoint stays public.
+No real password or API key was generated, committed or transmitted. No cloud
+service, paid disk or provider secret was provisioned. Local defaults unchanged.
+
+Added `docs/hosting.md` with Render startup/storage settings, matching private
+password setup, Vercel API origin, smoke checks and limits. This is one protected
+shared workspace, not multi-tenant accounts or Phase 7 platform connections.
+Updated the workspace badge and backend error to work in both local/hosted use.
+
+Verification: 197 backend tests passed with the project's macOS library environment
+and required local socket access; initial restricted run had 9 environment-related
+Spark/XGBoost failures, resolved on rerun. Type/lint, Ruff, production build and
+format checks passed. Production browser test verified anonymous denial on both
+services, authenticated API reads and a same-origin write through the actual
+Next rewrite. Reviewed 1440px/375px screenshots with no horizontal overflow.
+The default Playwright binary was absent; used already-installed Chromium via
+`CHROMIUM_EXECUTABLE`. Evidence: `docs/hosting-browser-results.json` and
+`docs/screenshots/hosting-{1440,375}.png`. Browser data/password were disposable
+fictional fixtures; no merchant/NVIDIA credentials used. Hosted provider setup and
+persistent-disk restart validation remain pending until the user configures them.
+
 ## Pre-Phase 7 audit and polish — complete (2026-11-01)
 
 Audited existing import/analytics, actual model training/reload/output, constrained

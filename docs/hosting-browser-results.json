@@ -1,0 +1,9 @@
+{
+  "checks": [
+    "Anonymous frontend and direct backend access denied",
+    "Authenticated browser reaches backend through production rewrite",
+    "Same-origin authenticated write accepted through proxy",
+    "Authenticated overview fits 1440px",
+    "Authenticated overview fits 375px"
+  ]
+}

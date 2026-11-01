@@ -21,3 +21,8 @@ future roadmaps. Current scope is local single-user use, without authentication.
 Run `npm run check`, `npm run build`, `.venv/bin/python -m pytest`, and
 `.venv/bin/ruff check backend scripts` for the phase as applicable. Browser-review
 desktop and mobile. Keep instructions, dependencies and phase reports current.
+
+User-authorized protected hosting extension (November 1, 2026): Vercel frontend
+and separately hosted FastAPI may use shared single-owner Basic authentication
+over HTTPS. See `docs/hosting.md`. Local use stays unauthenticated by default;
+this does not implement multi-user accounts or Phase 7 platform connections.

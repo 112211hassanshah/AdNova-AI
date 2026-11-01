@@ -649,3 +649,8 @@ cannot bypass baseline evaluation. Preserve component synthetic flags and gate
 legacy imports whose flags or rate/count semantics were lost. The 5% XGBoost
 policy is unchanged and explicitly operational, not statistically justified by
 one split. See `docs/critical-ml-planning-report.md` for the actual source audit.
+
+User-authorized protected hosting extension (November 1, 2026): Vercel frontend
+and separately hosted FastAPI may use shared single-owner Basic authentication
+over HTTPS. See `docs/hosting.md`. Local use stays unauthenticated by default;
+this does not implement multi-user accounts or Phase 7 platform connections.

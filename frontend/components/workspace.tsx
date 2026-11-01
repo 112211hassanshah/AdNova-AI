@@ -169,7 +169,7 @@ export function Workspace({ section }: { section: string }) {
           setError(
             reason instanceof Error
               ? reason.message
-              : "Could not reach the local service. Retry to reconnect.",
+              : "Could not reach the backend service. Retry to reconnect.",
           );
       });
     return () => controller.abort();
@@ -196,13 +196,10 @@ export function Workspace({ section }: { section: string }) {
               <ChevronRight size={14} />
               <strong>{title}</strong>
             </div>
-            <span
-              className="local-pill"
-              aria-label="Local single-user workspace"
-            >
+            <span className="local-pill" aria-label="Single-user workspace">
               <span className="small-dot" />
               <span>
-                Local<span className="mode-detail"> · single user</span>
+                Single user<span className="mode-detail"> · workspace</span>
               </span>
             </span>
             <Dialog.Root open={menuOpen} onOpenChange={setMenuOpen}>
@@ -280,7 +277,7 @@ export function Workspace({ section }: { section: string }) {
             {error ? (
               <div className="notice error" role="alert">
                 <div>
-                  <strong>We couldn’t reach your local backend.</strong>
+                  <strong>We couldn’t reach your backend.</strong>
                   <p>{error}</p>
                 </div>
                 <button

@@ -289,3 +289,7 @@ For isolation, launch services with a disposable `ADS_DATA_DIR`; do not run
 browser scripts concurrently because they intentionally change workspace selection.
 The model-demo command saves labelled demo data/models/plans, so use a disposable
 workspace when those artifacts are unwanted.
+
+## Protected hosting
+
+For the user-authorized Vercel + FastAPI deployment, follow [docs/hosting.md](docs/hosting.md). Hosted mode requires private access settings and persistent storage; the default launcher remains local.

@@ -1,7 +1,10 @@
-"""Local-only versioned HTTP boundary; all calculations are Python services."""
+"""Single-owner versioned HTTP boundary; all calculations are Python services."""
 
+import base64
 import csv
+import hmac
 import io
+import os
 from typing import Annotated, Literal
 
 from fastapi import Depends, FastAPI, Query, Request
@@ -97,17 +100,45 @@ async def domain_error(_request: Request, error: DomainError):
 
 @app.middleware("http")
 async def local_write_guard(request: Request, call_next):
+    hosted = os.environ.get("ADS_HOSTED") == "1" or os.environ.get("RENDER") == "true"
+    password = os.environ.get("ADS_ACCESS_PASSWORD", "")
+    if hosted or password:
+        if request.url.path != "/api/v1/health":
+            if len(password) < 32:
+                return JSONResponse(
+                    status_code=503, content={"detail": "Hosted access is not configured."}
+                )
+            expected = "Basic " + base64.b64encode(("owner:" + password).encode()).decode()
+            if not hmac.compare_digest(
+                request.headers.get("authorization", "").encode(), expected.encode()
+            ):
+                return JSONResponse(
+                    status_code=401,
+                    content={"detail": "Authentication required."},
+                    headers={
+                        "WWW-Authenticate": 'Basic realm="Adwise", charset="UTF-8"',
+                        "Cache-Control": "no-store",
+                    },
+                )
     if request.method in {"POST", "PUT", "DELETE", "PATCH"}:
         origin = request.headers.get("origin")
-        if origin and origin not in {
+        allowed_origins = {
             "http://127.0.0.1:3000",
             "http://localhost:3000",
             "http://127.0.0.1:8000",
             "http://localhost:8000",
-        }:
+        }
+        allowed_origins.update(
+            value.strip()
+            for value in os.environ.get("ADS_ALLOWED_ORIGINS", "").split(",")
+            if value.strip()
+        )
+        if origin and origin not in allowed_origins:
             return JSONResponse(
                 status_code=403,
-                content={"detail": "Local workspace writes must come from the local application."},
+                content={
+                    "detail": "Workspace writes must come from an allowed application origin."
+                },
             )
         if request.headers.get("sec-fetch-site") == "cross-site":
             return JSONResponse(
