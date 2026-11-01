@@ -2,9 +2,11 @@
 
 The Next.js frontend and Python FastAPI function deploy in the same existing
 Vercel project. Project root stays `frontend`; `frontend/api/index.py` imports the
-backend package included by `frontend/vercel.json`. Enable **Include source files
+backend package copied into `frontend/.backend/src` by the build script and included
+by `frontend/vercel.json`. The generated copy is ignored by Git. Enable **Include source files
 outside of the Root Directory** in Vercel's build settings. Keep Next.js as the
-framework. The production `/api/v1/*` rewrite targets the Python function;
+framework. `VERCEL_SUPPORT_LARGE_FUNCTIONS=1` enables Vercel's supported large-function
+packaging for Python data libraries; keep Fluid Compute enabled. The production `/api/v1/*` rewrite targets the Python function;
 localhost rewrites are used only for local development. `API_ORIGIN` is not
 required for this deployment. No Render service is required.
 

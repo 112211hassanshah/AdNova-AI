@@ -25,7 +25,14 @@ Ruff, formatting, type/lint and production build passed. User approved Neon term
 and connecting its **Free** database to Production only; Vercel confirms it is
 Available and connected. Preview/Development excluded. Source inclusion outside
 frontend was already enabled; disabled skipping backend-only changes. No paid
-resources provisioned. Live deployment and desktop/mobile review are pending.
+resources provisioned. Desktop/mobile review passed at 1440px/375px, including a simulated hosted
+notice and disabled lab form (actual auth/local API exercised separately). Evidence:
+`docs/vercel-browser-results.json` and `docs/screenshots/vercel-*.png`. Corrected a
+review selector to wait for the lab notice instead of the global hosting notice.
+Cloud attempts built successfully but Vercel returned an internal publishing error.
+Enabled the documented large-function flag and simplified Python packaging to
+copy authoritative backend source into an ignored build directory inside the
+frontend root. Final cloud runtime verification is still pending.
 See `docs/vercel.md` for architecture, limits, retention and setup.
 
 ## Protected single-owner hosting preparation — 2026-11-01

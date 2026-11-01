@@ -16,3 +16,7 @@ __pycache__/
 .DS_Store
 playwright-report/
 test-results/
+
+# Generated Python source copied into the Vercel function bundle.
+frontend/.backend/
+.vercel/
