@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-11-01T09:11:20.857Z",
+  "checks": [
+    "Shopify UI maps Name/line items, removes personal columns, preserves synthetic markers and saves eight unique orders from nine lines",
+    "Order expenses import attaches to the same store/snapshot, with explicit zeroes and all cost categories retained",
+    "Actual backend and UI match independent hand totals: store net 6400, platform revenue 12000, matched net 5150 and contribution 1690 PKR; insufficient attribution blocks profit forecasts",
+    "Pseudonymous attribution filtering exposes the unmatched order without guessing a channel from its domain",
+    "Source-labelled attribution CSV downloads successfully",
+    "Editing a comparison hides stale metrics; a supplied 6500 reference exposes the measured minus-100 PKR discrepancy",
+    "Removing cost evidence preserves unavailable contribution instead of replacing expenses with zero",
+    "Complete fictional history passes actual chronological response evaluation and produces an exact 5000.37 PKR advisory profit plan",
+    "What-if budget changes hide stale estimates; a binding 20% YouTube cap falls below positive historical support, so YouTube receives zero and the remaining platforms total exactly",
+    "Evaluated profit allocations export with synthetic provenance",
+    "Saved immutable profit plans restore their exact budget, constraints and source-bound results",
+    "Commerce result, controls, tables and profit plan contained at 1440px",
+    "Commerce result, controls, tables and profit plan contained at 1280px",
+    "Commerce result, controls, tables and profit plan contained at 1024px",
+    "Commerce result, controls, tables and profit plan contained at 768px",
+    "Commerce result, controls, tables and profit plan contained at 430px",
+    "Commerce result, controls, tables and profit plan contained at 390px",
+    "Commerce result, controls, tables and profit plan contained at 375px",
+    "Visible commerce fields labelled, one main/h1, control text contrast and reduced motion checked; deletion dialog traps focus and restores it on Escape at desktop/mobile",
+    "Unsupported small-budget profit forecast is withheld with an actionable remedy; no estimated profit is invented",
+    "Commerce workspace service failure displays a retry and recovers without fabricated financial data",
+    "All nine application routes reviewed at 1440px with the new commerce navigation",
+    "All nine application routes reviewed at 375px with the new commerce navigation"
+  ],
+  "errors": [],
+  "original_selections_restored": true
+}

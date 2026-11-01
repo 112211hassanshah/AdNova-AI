@@ -1,0 +1,2286 @@
+{
+  "id": "9bd739af30ba41f6a4ca334bc42920d5",
+  "created_at": "2026-10-29T14:15:56.247275+00:00",
+  "config": {
+    "dataset_id": "7e11cab6e0b44ff1a986f100e4d16145",
+    "method": "model",
+    "model_id": "8a506eb892c34b228b73b4edd618402e",
+    "budget": 1000000,
+    "step": 10000,
+    "start_date": "2026-10-30",
+    "horizon_days": 7,
+    "as_of_date": "2026-10-29",
+    "label_lag_days": 0,
+    "platforms": [
+      {
+        "platform": "Facebook",
+        "min_percent": 5,
+        "max_percent": 40
+      },
+      {
+        "platform": "Instagram",
+        "min_percent": 5,
+        "max_percent": 40
+      },
+      {
+        "platform": "Google",
+        "min_percent": 5,
+        "max_percent": 40
+      },
+      {
+        "platform": "TikTok",
+        "min_percent": 5,
+        "max_percent": 40
+      },
+      {
+        "platform": "YouTube",
+        "min_percent": 5,
+        "max_percent": 40
+      }
+    ]
+  },
+  "dataset": {
+    "id": "7e11cab6e0b44ff1a986f100e4d16145",
+    "workspace_id": "local",
+    "name": "Pakistan campaign demo",
+    "source": "synthetic_generator",
+    "is_synthetic": true,
+    "original_filename": null,
+    "import_profile": null,
+    "imported_at": "2026-10-28T13:33:38.171244+00:00",
+    "currency": "PKR",
+    "original_currency": "PKR",
+    "exchange_rate": 1,
+    "date_granularity": "daily",
+    "date_start": "2026-01-01",
+    "date_end": "2026-03-31",
+    "rows": 10000,
+    "conversion_definition": "click-attributed purchases",
+    "attribution_window": "synthetic same-day click",
+    "revenue_source": "synthetic",
+    "coverage": {
+      "impressions": 1,
+      "clicks": 1,
+      "spend": 1,
+      "conversions": 1,
+      "revenue": 1,
+      "age": 1,
+      "gender": 1,
+      "city": 1,
+      "device": 1
+    },
+    "warnings": [
+      "Synthetic demo: simulated results do not demonstrate real business performance."
+    ],
+    "data_ready_for_revenue": true,
+    "options": {
+      "campaign": [
+        "Campaign 001",
+        "Campaign 002",
+        "Campaign 003",
+        "Campaign 004",
+        "Campaign 005",
+        "Campaign 006",
+        "Campaign 007",
+        "Campaign 008",
+        "Campaign 009",
+        "Campaign 010",
+        "Campaign 011",
+        "Campaign 012",
+        "Campaign 013",
+        "Campaign 014",
+        "Campaign 015",
+        "Campaign 016",
+        "Campaign 017",
+        "Campaign 018",
+        "Campaign 019",
+        "Campaign 020",
+        "Campaign 021",
+        "Campaign 022",
+        "Campaign 023",
+        "Campaign 024",
+        "Campaign 025",
+        "Campaign 026",
+        "Campaign 027",
+        "Campaign 028",
+        "Campaign 029",
+        "Campaign 030",
+        "Campaign 031",
+        "Campaign 032",
+        "Campaign 033",
+        "Campaign 034",
+        "Campaign 035",
+        "Campaign 036",
+        "Campaign 037",
+        "Campaign 038",
+        "Campaign 039",
+        "Campaign 040",
+        "Campaign 041",
+        "Campaign 042",
+        "Campaign 043",
+        "Campaign 044",
+        "Campaign 045",
+        "Campaign 046",
+        "Campaign 047",
+        "Campaign 048",
+        "Campaign 049",
+        "Campaign 050",
+        "Campaign 051",
+        "Campaign 052",
+        "Campaign 053",
+        "Campaign 054",
+        "Campaign 055",
+        "Campaign 056",
+        "Campaign 057",
+        "Campaign 058",
+        "Campaign 059",
+        "Campaign 060",
+        "Campaign 061",
+        "Campaign 062",
+        "Campaign 063",
+        "Campaign 064",
+        "Campaign 065",
+        "Campaign 066",
+        "Campaign 067",
+        "Campaign 068",
+        "Campaign 069",
+        "Campaign 070",
+        "Campaign 071",
+        "Campaign 072",
+        "Campaign 073",
+        "Campaign 074",
+        "Campaign 075",
+        "Campaign 076",
+        "Campaign 077",
+        "Campaign 078",
+        "Campaign 079",
+        "Campaign 080",
+        "Campaign 081",
+        "Campaign 082",
+        "Campaign 083",
+        "Campaign 084",
+        "Campaign 085",
+        "Campaign 086",
+        "Campaign 087",
+        "Campaign 088",
+        "Campaign 089",
+        "Campaign 090",
+        "Campaign 091",
+        "Campaign 092",
+        "Campaign 093",
+        "Campaign 094",
+        "Campaign 095",
+        "Campaign 096",
+        "Campaign 097",
+        "Campaign 098",
+        "Campaign 099",
+        "Campaign 100",
+        "Campaign 101",
+        "Campaign 102",
+        "Campaign 103",
+        "Campaign 104",
+        "Campaign 105",
+        "Campaign 106",
+        "Campaign 107",
+        "Campaign 108",
+        "Campaign 109",
+        "Campaign 110",
+        "Campaign 111",
+        "Campaign 112"
+      ],
+      "platform": [
+        "Facebook",
+        "Google",
+        "Instagram",
+        "TikTok",
+        "YouTube"
+      ],
+      "age": [
+        "18–24",
+        "25–34",
+        "35–44",
+        "45–54"
+      ],
+      "gender": [
+        "all",
+        "female",
+        "male"
+      ],
+      "city": [
+        "Faisalabad",
+        "Islamabad",
+        "Karachi",
+        "Lahore",
+        "Rawalpindi"
+      ],
+      "device": [
+        "desktop",
+        "mobile",
+        "tablet"
+      ]
+    },
+    "seed": 42,
+    "parent_dataset_id": null,
+    "reporting_evidence": {}
+  },
+  "source_sha256": "0f7df119d24b31658e48949e51cfcca81c83ae7d8b73d2dda174ac9502e95a4e",
+  "is_synthetic": true,
+  "method_label": "XGBoost + adjusted response curves",
+  "model_id": "8a506eb892c34b228b73b4edd618402e",
+  "model_evidence": {
+    "algorithm": "XGBoost",
+    "acceptance": {
+      "eligible": true,
+      "reasons": [],
+      "policy": "v1: ≥5% RMSE improvement on validation and test, WAPE ≤100%, platform support 20/5/5 and no platform test RMSE >110% of baseline."
+    },
+    "test": {
+      "model": {
+        "rows": 1936,
+        "mae": 5202.9864532704,
+        "rmse": 7195.2553841501085,
+        "wape": 0.5105497034858246
+      },
+      "baseline": {
+        "rows": 1936,
+        "mae": 7582.802764569082,
+        "rmse": 10415.53259743501,
+        "wape": 0.7440722242528275
+      },
+      "platforms": [
+        {
+          "platform": "Facebook",
+          "model": {
+            "rows": 483,
+            "mae": 5054.626453824567,
+            "rmse": 7133.899648104866,
+            "wape": 0.5286866056080234
+          },
+          "baseline": {
+            "rows": 483,
+            "mae": 7219.2418026273135,
+            "rmse": 9851.025943775085,
+            "wape": 0.7550936708303492
+          }
+        },
+        {
+          "platform": "Google",
+          "model": {
+            "rows": 294,
+            "mae": 5691.175504387057,
+            "rmse": 8163.92525545644,
+            "wape": 0.45404490659783026
+          },
+          "baseline": {
+            "rows": 294,
+            "mae": 10100.31659714954,
+            "rmse": 13544.932852418962,
+            "wape": 0.8058084489621081
+          }
+        },
+        {
+          "platform": "Instagram",
+          "model": {
+            "rows": 464,
+            "mae": 4342.964236550167,
+            "rmse": 6337.446078650112,
+            "wape": 0.5419954026491604
+          },
+          "baseline": {
+            "rows": 464,
+            "mae": 6120.851293102099,
+            "rmse": 8608.726410049338,
+            "wape": 0.7638730324419482
+          }
+        },
+        {
+          "platform": "TikTok",
+          "model": {
+            "rows": 502,
+            "mae": 5733.117990982845,
+            "rmse": 7492.0312889868665,
+            "wape": 0.5149109739028424
+          },
+          "baseline": {
+            "rows": 502,
+            "mae": 7512.538512864883,
+            "rmse": 10249.416907085528,
+            "wape": 0.6747268289656666
+          }
+        },
+        {
+          "platform": "YouTube",
+          "model": {
+            "rows": 193,
+            "mae": 5519.331403169781,
+            "rmse": 6919.468149551691,
+            "wape": 0.5026142048054417
+          },
+          "baseline": {
+            "rows": 193,
+            "mae": 8355.18108040022,
+            "rmse": 10698.605785489079,
+            "wape": 0.760858949748709
+          }
+        }
+      ]
+    },
+    "hashes": {
+      "model.ubj": "0683d0c6a4c28ed8a524da7c2f4f8808d26eb8b00e5e7c340b1e692a956c5f6b",
+      "preprocessing.json": "1fe63bc90506cab2b12b28a1ff9d6174bef1f7b9aa626f55182bafa3d078121a",
+      "holdout.parquet": "43936854b2db3391e50cf5002a8ce115aee1a034d3516848410bb0db25e6f1bd"
+    },
+    "versions": {
+      "xgboost": "3.4.1",
+      "scikit-learn": "1.9.1",
+      "numpy": "2.5.4",
+      "pandas": "2.3.3"
+    }
+  },
+  "policy": "campaign-day-plan-v1",
+  "currency": "PKR",
+  "objective": "Maximize adjusted estimated attributed revenue",
+  "planning_end": "2026-11-05",
+  "training_period": {
+    "start": "2026-01-01",
+    "end": "2026-02-23"
+  },
+  "training_controls": {
+    "dataset_id": "7e11cab6e0b44ff1a986f100e4d16145",
+    "seed": 40,
+    "as_of_date": "2026-10-28",
+    "label_lag_days": 0,
+    "configured_label_lag_days": 7
+  },
+  "coverage": {
+    "input_rows": 10000,
+    "eligible_rows": 10000,
+    "excluded_rows": 0,
+    "maturity_cutoff": "2026-10-28",
+    "label_lag_days": 0
+  },
+  "baseline": {
+    "global_rate": 6.92419802237312,
+    "platform_rates": {
+      "Facebook": 7.190932424670149,
+      "Google": 7.977025688933445,
+      "Instagram": 5.93845984442873,
+      "TikTok": 6.799115347235721,
+      "YouTube": 7.239650095541787
+    },
+    "prior_equivalent_rows": 20
+  },
+  "totals": {
+    "budget": 1000000,
+    "estimated_revenue": 8267277.112500006,
+    "raw_estimated_revenue": 8560259.75,
+    "estimated_roas": 8.267277112500006
+  },
+  "allocations": [
+    {
+      "platform": "Facebook",
+      "budget": 260000,
+      "share_percent": 26,
+      "estimated_revenue": 2080279.7499999958,
+      "raw_estimated_revenue": 2137477,
+      "next_step_revenue": 59212.250000000466,
+      "effective_min": 110000,
+      "effective_max": 400000,
+      "requested_min_percent": 5,
+      "requested_max_percent": 40,
+      "reason": "Received additional steps under the adjusted marginal-revenue rule."
+    },
+    {
+      "platform": "Google",
+      "budget": 220000,
+      "share_percent": 22,
+      "estimated_revenue": 2151495.499999999,
+      "raw_estimated_revenue": 2190743.25,
+      "next_step_revenue": 62920.74999999581,
+      "effective_min": 110000,
+      "effective_max": 400000,
+      "requested_min_percent": 5,
+      "requested_max_percent": 40,
+      "reason": "Received additional steps under the adjusted marginal-revenue rule."
+    },
+    {
+      "platform": "Instagram",
+      "budget": 220000,
+      "share_percent": 22,
+      "estimated_revenue": 1461431.749999995,
+      "raw_estimated_revenue": 1503214,
+      "next_step_revenue": 63850.0000000007,
+      "effective_min": 220000,
+      "effective_max": 400000,
+      "requested_min_percent": 5,
+      "requested_max_percent": 40,
+      "reason": "At the effective minimum; other channels received the available steps."
+    },
+    {
+      "platform": "TikTok",
+      "budget": 150000,
+      "share_percent": 15,
+      "estimated_revenue": 1266194.2375000173,
+      "raw_estimated_revenue": 1377997,
+      "next_step_revenue": 64712.76249999739,
+      "effective_min": 150000,
+      "effective_max": 400000,
+      "requested_min_percent": 5,
+      "requested_max_percent": 40,
+      "reason": "At the effective minimum; other channels received the available steps."
+    },
+    {
+      "platform": "YouTube",
+      "budget": 150000,
+      "share_percent": 15,
+      "estimated_revenue": 1307875.8749999993,
+      "raw_estimated_revenue": 1350828.5,
+      "next_step_revenue": 77040.125,
+      "effective_min": 80000,
+      "effective_max": 400000,
+      "requested_min_percent": 5,
+      "requested_max_percent": 40,
+      "reason": "Received additional steps under the adjusted marginal-revenue rule."
+    }
+  ],
+  "comparisons": [
+    {
+      "allocations": [
+        {
+          "platform": "Instagram",
+          "budget": 220000,
+          "share_percent": 22,
+          "estimated_revenue": 1461431.749999995,
+          "raw_estimated_revenue": 1503214,
+          "next_step_revenue": 63850.0000000007,
+          "effective_min": 220000,
+          "effective_max": 400000,
+          "requested_min_percent": 5,
+          "requested_max_percent": 40,
+          "reason": "At the effective minimum; other channels received the available steps."
+        },
+        {
+          "platform": "Facebook",
+          "budget": 200000,
+          "share_percent": 20,
+          "estimated_revenue": 1613568.4374999972,
+          "raw_estimated_revenue": 1696447.25,
+          "next_step_revenue": 77785.21874999977,
+          "effective_min": 110000,
+          "effective_max": 400000,
+          "requested_min_percent": 5,
+          "requested_max_percent": 40,
+          "reason": "Received additional steps under the adjusted marginal-revenue rule."
+        },
+        {
+          "platform": "Google",
+          "budget": 200000,
+          "share_percent": 20,
+          "estimated_revenue": 1982933.124999999,
+          "raw_estimated_revenue": 1982933.125,
+          "next_step_revenue": 84281.1875,
+          "effective_min": 110000,
+          "effective_max": 400000,
+          "requested_min_percent": 5,
+          "requested_max_percent": 40,
+          "reason": "Received additional steps under the adjusted marginal-revenue rule."
+        },
+        {
+          "platform": "TikTok",
+          "budget": 190000,
+          "share_percent": 19,
+          "estimated_revenue": 1525045.2875000068,
+          "raw_estimated_revenue": 1598400.25,
+          "next_step_revenue": 64712.76249999739,
+          "effective_min": 150000,
+          "effective_max": 400000,
+          "requested_min_percent": 5,
+          "requested_max_percent": 40,
+          "reason": "Received additional steps under the adjusted marginal-revenue rule."
+        },
+        {
+          "platform": "YouTube",
+          "budget": 190000,
+          "share_percent": 19,
+          "estimated_revenue": 1502144.8749999993,
+          "raw_estimated_revenue": 1502144.875,
+          "next_step_revenue": 26006.78125000093,
+          "effective_min": 80000,
+          "effective_max": 400000,
+          "requested_min_percent": 5,
+          "requested_max_percent": 40,
+          "reason": "Received additional steps under the adjusted marginal-revenue rule."
+        }
+      ],
+      "budget": 1000000,
+      "estimated_revenue": 8085123.474999998,
+      "raw_estimated_revenue": 8283139.5,
+      "estimated_roas": 8.085123474999998,
+      "name": "Constrained equal split",
+      "estimated_difference": 182153.63750000857
+    },
+    {
+      "allocations": [
+        {
+          "platform": "TikTok",
+          "budget": 280000,
+          "share_percent": 28,
+          "estimated_revenue": 2107460.1499999836,
+          "raw_estimated_revenue": 2155949.5,
+          "next_step_revenue": 64712.76249999739,
+          "effective_min": 150000,
+          "effective_max": 400000,
+          "requested_min_percent": 5,
+          "requested_max_percent": 40,
+          "reason": "Received additional steps under the adjusted marginal-revenue rule."
+        },
+        {
+          "platform": "Instagram",
+          "budget": 230000,
+          "share_percent": 23,
+          "estimated_revenue": 1525281.7499999958,
+          "raw_estimated_revenue": 1555399,
+          "next_step_revenue": 63850.0000000007,
+          "effective_min": 220000,
+          "effective_max": 400000,
+          "requested_min_percent": 5,
+          "requested_max_percent": 40,
+          "reason": "Received additional steps under the adjusted marginal-revenue rule."
+        },
+        {
+          "platform": "Facebook",
+          "budget": 220000,
+          "share_percent": 22,
+          "estimated_revenue": 1769138.8749999967,
+          "raw_estimated_revenue": 1849704.5,
+          "next_step_revenue": 77785.21874999977,
+          "effective_min": 110000,
+          "effective_max": 400000,
+          "requested_min_percent": 5,
+          "requested_max_percent": 40,
+          "reason": "Received additional steps under the adjusted marginal-revenue rule."
+        },
+        {
+          "platform": "Google",
+          "budget": 160000,
+          "share_percent": 16,
+          "estimated_revenue": 1645808.374999999,
+          "raw_estimated_revenue": 1684011.625,
+          "next_step_revenue": 84281.1875,
+          "effective_min": 110000,
+          "effective_max": 400000,
+          "requested_min_percent": 5,
+          "requested_max_percent": 40,
+          "reason": "Received additional steps under the adjusted marginal-revenue rule."
+        },
+        {
+          "platform": "YouTube",
+          "budget": 110000,
+          "share_percent": 11,
+          "estimated_revenue": 991539.375,
+          "raw_estimated_revenue": 1054843.75,
+          "next_step_revenue": 79084.125,
+          "effective_min": 80000,
+          "effective_max": 400000,
+          "requested_min_percent": 5,
+          "requested_max_percent": 40,
+          "reason": "Received additional steps under the adjusted marginal-revenue rule."
+        }
+      ],
+      "budget": 1000000,
+      "estimated_revenue": 8039228.524999975,
+      "raw_estimated_revenue": 8299908.375,
+      "estimated_roas": 8.039228524999976,
+      "name": "Constrained historical spend mix",
+      "estimated_difference": 228048.5875000311
+    }
+  ],
+  "contexts": [
+    {
+      "platform": "Facebook",
+      "representative_date": "2026-01-02",
+      "campaign_segment_rows_per_day": 28,
+      "supported_min": 105548.15238369736,
+      "supported_max": 657857.7068825347,
+      "campaign_day_spend_min": 132.42,
+      "campaign_day_spend_max": 7079.17,
+      "reference_budget": 334618.4099999999,
+      "context_weights": [
+        {
+          "platform": "Facebook",
+          "age": "45–54",
+          "gender": "male",
+          "city": "Lahore",
+          "device": "mobile",
+          "weight": 0.008782152781133592
+        },
+        {
+          "platform": "Facebook",
+          "age": "35–44",
+          "gender": "female",
+          "city": "Islamabad",
+          "device": "mobile",
+          "weight": 0.07532660859873193
+        },
+        {
+          "platform": "Facebook",
+          "age": "25–34",
+          "gender": "all",
+          "city": "Islamabad",
+          "device": "mobile",
+          "weight": 0.04933034019257937
+        },
+        {
+          "platform": "Facebook",
+          "age": "18–24",
+          "gender": "male",
+          "city": "Faisalabad",
+          "device": "desktop",
+          "weight": 0.04844796196359909
+        },
+        {
+          "platform": "Facebook",
+          "age": "25–34",
+          "gender": "female",
+          "city": "Rawalpindi",
+          "device": "desktop",
+          "weight": 0.038236389922479165
+        },
+        {
+          "platform": "Facebook",
+          "age": "35–44",
+          "gender": "all",
+          "city": "Faisalabad",
+          "device": "mobile",
+          "weight": 0.01730030335151016
+        },
+        {
+          "platform": "Facebook",
+          "age": "18–24",
+          "gender": "male",
+          "city": "Islamabad",
+          "device": "desktop",
+          "weight": 0.028909288045448553
+        },
+        {
+          "platform": "Facebook",
+          "age": "25–34",
+          "gender": "all",
+          "city": "Islamabad",
+          "device": "desktop",
+          "weight": 0.06431842766810113
+        },
+        {
+          "platform": "Facebook",
+          "age": "35–44",
+          "gender": "all",
+          "city": "Karachi",
+          "device": "mobile",
+          "weight": 0.04960814917505586
+        },
+        {
+          "platform": "Facebook",
+          "age": "25–34",
+          "gender": "male",
+          "city": "Faisalabad",
+          "device": "mobile",
+          "weight": 0.04200061795763121
+        },
+        {
+          "platform": "Facebook",
+          "age": "25–34",
+          "gender": "female",
+          "city": "Faisalabad",
+          "device": "mobile",
+          "weight": 0.020008313350123208
+        },
+        {
+          "platform": "Facebook",
+          "age": "18–24",
+          "gender": "female",
+          "city": "Lahore",
+          "device": "mobile",
+          "weight": 0.039437579062072535
+        },
+        {
+          "platform": "Facebook",
+          "age": "18–24",
+          "gender": "female",
+          "city": "Islamabad",
+          "device": "desktop",
+          "weight": 0.041314881628897834
+        },
+        {
+          "platform": "Facebook",
+          "age": "25–34",
+          "gender": "female",
+          "city": "Rawalpindi",
+          "device": "desktop",
+          "weight": 0.045558371997523994
+        },
+        {
+          "platform": "Facebook",
+          "age": "45–54",
+          "gender": "female",
+          "city": "Faisalabad",
+          "device": "desktop",
+          "weight": 0.03341322433514642
+        },
+        {
+          "platform": "Facebook",
+          "age": "35–44",
+          "gender": "all",
+          "city": "Faisalabad",
+          "device": "mobile",
+          "weight": 0.04124626615732232
+        },
+        {
+          "platform": "Facebook",
+          "age": "35–44",
+          "gender": "all",
+          "city": "Faisalabad",
+          "device": "mobile",
+          "weight": 0.029028319153151204
+        },
+        {
+          "platform": "Facebook",
+          "age": "45–54",
+          "gender": "all",
+          "city": "Rawalpindi",
+          "device": "mobile",
+          "weight": 0.015178244376930727
+        },
+        {
+          "platform": "Facebook",
+          "age": "35–44",
+          "gender": "male",
+          "city": "Faisalabad",
+          "device": "mobile",
+          "weight": 0.0137044760926334
+        },
+        {
+          "platform": "Facebook",
+          "age": "18–24",
+          "gender": "female",
+          "city": "Islamabad",
+          "device": "mobile",
+          "weight": 0.06519557605930888
+        },
+        {
+          "platform": "Facebook",
+          "age": "25–34",
+          "gender": "all",
+          "city": "Islamabad",
+          "device": "mobile",
+          "weight": 0.03257645029154254
+        },
+        {
+          "platform": "Facebook",
+          "age": "25–34",
+          "gender": "male",
+          "city": "Karachi",
+          "device": "desktop",
+          "weight": 0.01953783714410693
+        },
+        {
+          "platform": "Facebook",
+          "age": "25–34",
+          "gender": "all",
+          "city": "Lahore",
+          "device": "desktop",
+          "weight": 0.01900020982109144
+        },
+        {
+          "platform": "Facebook",
+          "age": "35–44",
+          "gender": "male",
+          "city": "Rawalpindi",
+          "device": "mobile",
+          "weight": 0.048177474754004135
+        },
+        {
+          "platform": "Facebook",
+          "age": "35–44",
+          "gender": "male",
+          "city": "Karachi",
+          "device": "mobile",
+          "weight": 0.011312557488991716
+        },
+        {
+          "platform": "Facebook",
+          "age": "18–24",
+          "gender": "female",
+          "city": "Rawalpindi",
+          "device": "mobile",
+          "weight": 0.051597997850745876
+        },
+        {
+          "platform": "Facebook",
+          "age": "18–24",
+          "gender": "female",
+          "city": "Faisalabad",
+          "device": "mobile",
+          "weight": 0.02564607846890433
+        },
+        {
+          "platform": "Facebook",
+          "age": "18–24",
+          "gender": "female",
+          "city": "Islamabad",
+          "device": "mobile",
+          "weight": 0.02580590231123267
+        }
+      ]
+    },
+    {
+      "platform": "Google",
+      "representative_date": "2026-01-26",
+      "campaign_segment_rows_per_day": 17,
+      "supported_min": 102320.63005556104,
+      "supported_max": 709232.1476377639,
+      "campaign_day_spend_min": 354.79,
+      "campaign_day_spend_max": 10378.42,
+      "reference_budget": 234617.32,
+      "context_weights": [
+        {
+          "platform": "Google",
+          "age": "25–34",
+          "gender": "all",
+          "city": "Islamabad",
+          "device": "mobile",
+          "weight": 0.02427203584117319
+        },
+        {
+          "platform": "Google",
+          "age": "25–34",
+          "gender": "all",
+          "city": "Faisalabad",
+          "device": "mobile",
+          "weight": 0.05530636016130437
+        },
+        {
+          "platform": "Google",
+          "age": "25–34",
+          "gender": "male",
+          "city": "Lahore",
+          "device": "mobile",
+          "weight": 0.10243323041964676
+        },
+        {
+          "platform": "Google",
+          "age": "18–24",
+          "gender": "female",
+          "city": "Karachi",
+          "device": "mobile",
+          "weight": 0.03908104482652857
+        },
+        {
+          "platform": "Google",
+          "age": "45–54",
+          "gender": "female",
+          "city": "Rawalpindi",
+          "device": "mobile",
+          "weight": 0.0885968691484499
+        },
+        {
+          "platform": "Google",
+          "age": "25–34",
+          "gender": "all",
+          "city": "Islamabad",
+          "device": "mobile",
+          "weight": 0.035405271869954014
+        },
+        {
+          "platform": "Google",
+          "age": "35–44",
+          "gender": "all",
+          "city": "Karachi",
+          "device": "mobile",
+          "weight": 0.057165728429597606
+        },
+        {
+          "platform": "Google",
+          "age": "45–54",
+          "gender": "all",
+          "city": "Islamabad",
+          "device": "mobile",
+          "weight": 0.027841593280496083
+        },
+        {
+          "platform": "Google",
+          "age": "25–34",
+          "gender": "all",
+          "city": "Karachi",
+          "device": "mobile",
+          "weight": 0.07693822433910676
+        },
+        {
+          "platform": "Google",
+          "age": "25–34",
+          "gender": "male",
+          "city": "Karachi",
+          "device": "mobile",
+          "weight": 0.027042888393746887
+        },
+        {
+          "platform": "Google",
+          "age": "18–24",
+          "gender": "all",
+          "city": "Karachi",
+          "device": "mobile",
+          "weight": 0.055763444915319975
+        },
+        {
+          "platform": "Google",
+          "age": "25–34",
+          "gender": "male",
+          "city": "Islamabad",
+          "device": "mobile",
+          "weight": 0.08731750921031746
+        },
+        {
+          "platform": "Google",
+          "age": "25–34",
+          "gender": "female",
+          "city": "Karachi",
+          "device": "mobile",
+          "weight": 0.10122666988097895
+        },
+        {
+          "platform": "Google",
+          "age": "18–24",
+          "gender": "female",
+          "city": "Rawalpindi",
+          "device": "mobile",
+          "weight": 0.03844166321565688
+        },
+        {
+          "platform": "Google",
+          "age": "35–44",
+          "gender": "male",
+          "city": "Islamabad",
+          "device": "mobile",
+          "weight": 0.07872986529724232
+        },
+        {
+          "platform": "Google",
+          "age": "25–34",
+          "gender": "male",
+          "city": "Faisalabad",
+          "device": "desktop",
+          "weight": 0.07865855768875034
+        },
+        {
+          "platform": "Google",
+          "age": "25–34",
+          "gender": "male",
+          "city": "Rawalpindi",
+          "device": "mobile",
+          "weight": 0.025779043081729854
+        }
+      ]
+    },
+    {
+      "platform": "Instagram",
+      "representative_date": "2026-01-01",
+      "campaign_segment_rows_per_day": 27,
+      "supported_min": 216470.72864731686,
+      "supported_max": 790961.9369706409,
+      "campaign_day_spend_min": 245.22,
+      "campaign_day_spend_max": 9505.76,
+      "reference_budget": 343985.5999999999,
+      "context_weights": [
+        {
+          "platform": "Instagram",
+          "age": "18–24",
+          "gender": "male",
+          "city": "Karachi",
+          "device": "mobile",
+          "weight": 0.03688462540292385
+        },
+        {
+          "platform": "Instagram",
+          "age": "25–34",
+          "gender": "all",
+          "city": "Lahore",
+          "device": "mobile",
+          "weight": 0.06314854459023868
+        },
+        {
+          "platform": "Instagram",
+          "age": "35–44",
+          "gender": "male",
+          "city": "Islamabad",
+          "device": "mobile",
+          "weight": 0.021786173607267284
+        },
+        {
+          "platform": "Instagram",
+          "age": "45–54",
+          "gender": "female",
+          "city": "Islamabad",
+          "device": "mobile",
+          "weight": 0.01813686386872009
+        },
+        {
+          "platform": "Instagram",
+          "age": "35–44",
+          "gender": "all",
+          "city": "Lahore",
+          "device": "mobile",
+          "weight": 0.01602558362908215
+        },
+        {
+          "platform": "Instagram",
+          "age": "18–24",
+          "gender": "male",
+          "city": "Lahore",
+          "device": "mobile",
+          "weight": 0.04132187510174845
+        },
+        {
+          "platform": "Instagram",
+          "age": "25–34",
+          "gender": "all",
+          "city": "Lahore",
+          "device": "mobile",
+          "weight": 0.02645337479243318
+        },
+        {
+          "platform": "Instagram",
+          "age": "45–54",
+          "gender": "male",
+          "city": "Faisalabad",
+          "device": "mobile",
+          "weight": 0.04216618370071306
+        },
+        {
+          "platform": "Instagram",
+          "age": "18–24",
+          "gender": "all",
+          "city": "Rawalpindi",
+          "device": "mobile",
+          "weight": 0.03947778627942566
+        },
+        {
+          "platform": "Instagram",
+          "age": "35–44",
+          "gender": "male",
+          "city": "Lahore",
+          "device": "mobile",
+          "weight": 0.021876526226679262
+        },
+        {
+          "platform": "Instagram",
+          "age": "45–54",
+          "gender": "all",
+          "city": "Islamabad",
+          "device": "mobile",
+          "weight": 0.03871955686517111
+        },
+        {
+          "platform": "Instagram",
+          "age": "45–54",
+          "gender": "male",
+          "city": "Faisalabad",
+          "device": "mobile",
+          "weight": 0.042366221144140924
+        },
+        {
+          "platform": "Instagram",
+          "age": "25–34",
+          "gender": "male",
+          "city": "Faisalabad",
+          "device": "mobile",
+          "weight": 0.03538119037541108
+        },
+        {
+          "platform": "Instagram",
+          "age": "18–24",
+          "gender": "male",
+          "city": "Rawalpindi",
+          "device": "mobile",
+          "weight": 0.007929663334744248
+        },
+        {
+          "platform": "Instagram",
+          "age": "25–34",
+          "gender": "female",
+          "city": "Lahore",
+          "device": "mobile",
+          "weight": 0.03585025070816919
+        },
+        {
+          "platform": "Instagram",
+          "age": "35–44",
+          "gender": "female",
+          "city": "Lahore",
+          "device": "mobile",
+          "weight": 0.038965177612086094
+        },
+        {
+          "platform": "Instagram",
+          "age": "25–34",
+          "gender": "all",
+          "city": "Lahore",
+          "device": "mobile",
+          "weight": 0.0841258180575001
+        },
+        {
+          "platform": "Instagram",
+          "age": "25–34",
+          "gender": "female",
+          "city": "Lahore",
+          "device": "mobile",
+          "weight": 0.018231896916615118
+        },
+        {
+          "platform": "Instagram",
+          "age": "18–24",
+          "gender": "all",
+          "city": "Islamabad",
+          "device": "mobile",
+          "weight": 0.04142016409989256
+        },
+        {
+          "platform": "Instagram",
+          "age": "25–34",
+          "gender": "all",
+          "city": "Islamabad",
+          "device": "mobile",
+          "weight": 0.033746296356591675
+        },
+        {
+          "platform": "Instagram",
+          "age": "35–44",
+          "gender": "all",
+          "city": "Islamabad",
+          "device": "mobile",
+          "weight": 0.022168951258424777
+        },
+        {
+          "platform": "Instagram",
+          "age": "18–24",
+          "gender": "female",
+          "city": "Faisalabad",
+          "device": "mobile",
+          "weight": 0.05606664930159868
+        },
+        {
+          "platform": "Instagram",
+          "age": "45–54",
+          "gender": "all",
+          "city": "Lahore",
+          "device": "mobile",
+          "weight": 0.05002706508644549
+        },
+        {
+          "platform": "Instagram",
+          "age": "18–24",
+          "gender": "female",
+          "city": "Faisalabad",
+          "device": "mobile",
+          "weight": 0.01370348061081627
+        },
+        {
+          "platform": "Instagram",
+          "age": "35–44",
+          "gender": "all",
+          "city": "Lahore",
+          "device": "mobile",
+          "weight": 0.07469760362061668
+        },
+        {
+          "platform": "Instagram",
+          "age": "18–24",
+          "gender": "male",
+          "city": "Faisalabad",
+          "device": "desktop",
+          "weight": 0.04619705010907434
+        },
+        {
+          "platform": "Instagram",
+          "age": "25–34",
+          "gender": "female",
+          "city": "Rawalpindi",
+          "device": "mobile",
+          "weight": 0.033125427343470196
+        }
+      ]
+    },
+    {
+      "platform": "TikTok",
+      "representative_date": "2026-01-27",
+      "campaign_segment_rows_per_day": 29,
+      "supported_min": 148454.32671737974,
+      "supported_max": 562953.3485091551,
+      "campaign_day_spend_min": 246.78,
+      "campaign_day_spend_max": 10717.14,
+      "reference_budget": 419128.70999999996,
+      "context_weights": [
+        {
+          "platform": "TikTok",
+          "age": "45–54",
+          "gender": "all",
+          "city": "Karachi",
+          "device": "mobile",
+          "weight": 0.061498912827995016
+        },
+        {
+          "platform": "TikTok",
+          "age": "18–24",
+          "gender": "female",
+          "city": "Karachi",
+          "device": "mobile",
+          "weight": 0.027050449490802004
+        },
+        {
+          "platform": "TikTok",
+          "age": "45–54",
+          "gender": "female",
+          "city": "Karachi",
+          "device": "mobile",
+          "weight": 0.035275846410044304
+        },
+        {
+          "platform": "TikTok",
+          "age": "45–54",
+          "gender": "all",
+          "city": "Lahore",
+          "device": "mobile",
+          "weight": 0.034966037043847466
+        },
+        {
+          "platform": "TikTok",
+          "age": "18–24",
+          "gender": "all",
+          "city": "Lahore",
+          "device": "mobile",
+          "weight": 0.021940014560205147
+        },
+        {
+          "platform": "TikTok",
+          "age": "18–24",
+          "gender": "all",
+          "city": "Karachi",
+          "device": "mobile",
+          "weight": 0.13326145087985025
+        },
+        {
+          "platform": "TikTok",
+          "age": "25–34",
+          "gender": "male",
+          "city": "Faisalabad",
+          "device": "mobile",
+          "weight": 0.02979915167347997
+        },
+        {
+          "platform": "TikTok",
+          "age": "25–34",
+          "gender": "all",
+          "city": "Rawalpindi",
+          "device": "mobile",
+          "weight": 0.03696919259002802
+        },
+        {
+          "platform": "TikTok",
+          "age": "35–44",
+          "gender": "male",
+          "city": "Rawalpindi",
+          "device": "mobile",
+          "weight": 0.018934947214663485
+        },
+        {
+          "platform": "TikTok",
+          "age": "25–34",
+          "gender": "female",
+          "city": "Karachi",
+          "device": "mobile",
+          "weight": 0.011636306183845055
+        },
+        {
+          "platform": "TikTok",
+          "age": "45–54",
+          "gender": "male",
+          "city": "Faisalabad",
+          "device": "mobile",
+          "weight": 0.0337932708069557
+        },
+        {
+          "platform": "TikTok",
+          "age": "18–24",
+          "gender": "all",
+          "city": "Faisalabad",
+          "device": "mobile",
+          "weight": 0.043282790148162366
+        },
+        {
+          "platform": "TikTok",
+          "age": "35–44",
+          "gender": "all",
+          "city": "Faisalabad",
+          "device": "tablet",
+          "weight": 0.017813621023479876
+        },
+        {
+          "platform": "TikTok",
+          "age": "35–44",
+          "gender": "male",
+          "city": "Lahore",
+          "device": "mobile",
+          "weight": 0.013449233768786682
+        },
+        {
+          "platform": "TikTok",
+          "age": "25–34",
+          "gender": "male",
+          "city": "Faisalabad",
+          "device": "mobile",
+          "weight": 0.044808288127052905
+        },
+        {
+          "platform": "TikTok",
+          "age": "45–54",
+          "gender": "female",
+          "city": "Faisalabad",
+          "device": "mobile",
+          "weight": 0.0251869169258293
+        },
+        {
+          "platform": "TikTok",
+          "age": "35–44",
+          "gender": "female",
+          "city": "Rawalpindi",
+          "device": "mobile",
+          "weight": 0.014493733917678893
+        },
+        {
+          "platform": "TikTok",
+          "age": "45–54",
+          "gender": "male",
+          "city": "Islamabad",
+          "device": "desktop",
+          "weight": 0.014023257915211773
+        },
+        {
+          "platform": "TikTok",
+          "age": "35–44",
+          "gender": "female",
+          "city": "Rawalpindi",
+          "device": "mobile",
+          "weight": 0.019508136295411496
+        },
+        {
+          "platform": "TikTok",
+          "age": "18–24",
+          "gender": "male",
+          "city": "Islamabad",
+          "device": "mobile",
+          "weight": 0.014982247338770948
+        },
+        {
+          "platform": "TikTok",
+          "age": "18–24",
+          "gender": "all",
+          "city": "Rawalpindi",
+          "device": "mobile",
+          "weight": 0.024356360603405097
+        },
+        {
+          "platform": "TikTok",
+          "age": "18–24",
+          "gender": "male",
+          "city": "Karachi",
+          "device": "mobile",
+          "weight": 0.03961969104908132
+        },
+        {
+          "platform": "TikTok",
+          "age": "45–54",
+          "gender": "female",
+          "city": "Faisalabad",
+          "device": "mobile",
+          "weight": 0.014857989566021378
+        },
+        {
+          "platform": "TikTok",
+          "age": "35–44",
+          "gender": "male",
+          "city": "Karachi",
+          "device": "mobile",
+          "weight": 0.1047519746380533
+        },
+        {
+          "platform": "TikTok",
+          "age": "35–44",
+          "gender": "all",
+          "city": "Islamabad",
+          "device": "desktop",
+          "weight": 0.012292834819165693
+        },
+        {
+          "platform": "TikTok",
+          "age": "35–44",
+          "gender": "male",
+          "city": "Karachi",
+          "device": "mobile",
+          "weight": 0.029616606316470184
+        },
+        {
+          "platform": "TikTok",
+          "age": "25–34",
+          "gender": "all",
+          "city": "Islamabad",
+          "device": "mobile",
+          "weight": 0.04608777575747555
+        },
+        {
+          "platform": "TikTok",
+          "age": "45–54",
+          "gender": "female",
+          "city": "Karachi",
+          "device": "desktop",
+          "weight": 0.05656300662390796
+        },
+        {
+          "platform": "TikTok",
+          "age": "35–44",
+          "gender": "all",
+          "city": "Rawalpindi",
+          "device": "desktop",
+          "weight": 0.01917995548431889
+        }
+      ]
+    },
+    {
+      "platform": "YouTube",
+      "representative_date": "2026-01-08",
+      "campaign_segment_rows_per_day": 11,
+      "supported_min": 78378.246322858,
+      "supported_max": 550158.9974738954,
+      "campaign_day_spend_min": 365.56,
+      "campaign_day_spend_max": 13060.63,
+      "reference_budget": 168585.27000000002,
+      "context_weights": [
+        {
+          "platform": "YouTube",
+          "age": "35–44",
+          "gender": "male",
+          "city": "Islamabad",
+          "device": "mobile",
+          "weight": 0.0411387661567348
+        },
+        {
+          "platform": "YouTube",
+          "age": "18–24",
+          "gender": "male",
+          "city": "Lahore",
+          "device": "mobile",
+          "weight": 0.03264834466261494
+        },
+        {
+          "platform": "YouTube",
+          "age": "45–54",
+          "gender": "female",
+          "city": "Faisalabad",
+          "device": "desktop",
+          "weight": 0.11408422574522671
+        },
+        {
+          "platform": "YouTube",
+          "age": "18–24",
+          "gender": "all",
+          "city": "Karachi",
+          "device": "mobile",
+          "weight": 0.15591308778044485
+        },
+        {
+          "platform": "YouTube",
+          "age": "18–24",
+          "gender": "female",
+          "city": "Islamabad",
+          "device": "desktop",
+          "weight": 0.09070608600620919
+        },
+        {
+          "platform": "YouTube",
+          "age": "18–24",
+          "gender": "female",
+          "city": "Karachi",
+          "device": "desktop",
+          "weight": 0.11776266099642037
+        },
+        {
+          "platform": "YouTube",
+          "age": "45–54",
+          "gender": "male",
+          "city": "Faisalabad",
+          "device": "mobile",
+          "weight": 0.09277388232079824
+        },
+        {
+          "platform": "YouTube",
+          "age": "35–44",
+          "gender": "male",
+          "city": "Karachi",
+          "device": "mobile",
+          "weight": 0.05240867129138862
+        },
+        {
+          "platform": "YouTube",
+          "age": "45–54",
+          "gender": "all",
+          "city": "Lahore",
+          "device": "mobile",
+          "weight": 0.16617816016784856
+        },
+        {
+          "platform": "YouTube",
+          "age": "25–34",
+          "gender": "all",
+          "city": "Faisalabad",
+          "device": "mobile",
+          "weight": 0.06987283052665276
+        },
+        {
+          "platform": "YouTube",
+          "age": "18–24",
+          "gender": "female",
+          "city": "Faisalabad",
+          "device": "mobile",
+          "weight": 0.0665132843456608
+        }
+      ]
+    }
+  ],
+  "curves": [
+    {
+      "platform": "Facebook",
+      "points": [
+        {
+          "budget": 110000,
+          "raw_revenue": 991162.875,
+          "adjusted_revenue": 913501.4687499984
+        },
+        {
+          "budget": 120000,
+          "raw_revenue": 1045206.625,
+          "adjusted_revenue": 991286.6874999986
+        },
+        {
+          "budget": 130000,
+          "raw_revenue": 1116972.75,
+          "adjusted_revenue": 1069071.9062499988
+        },
+        {
+          "budget": 140000,
+          "raw_revenue": 1180276.25,
+          "adjusted_revenue": 1146857.1249999986
+        },
+        {
+          "budget": 150000,
+          "raw_revenue": 1248724,
+          "adjusted_revenue": 1224642.3437499984
+        },
+        {
+          "budget": 160000,
+          "raw_revenue": 1339243.125,
+          "adjusted_revenue": 1302427.5624999981
+        },
+        {
+          "budget": 170000,
+          "raw_revenue": 1411036.75,
+          "adjusted_revenue": 1380212.781249998
+        },
+        {
+          "budget": 180000,
+          "raw_revenue": 1457998,
+          "adjusted_revenue": 1457997.9999999977
+        },
+        {
+          "budget": 190000,
+          "raw_revenue": 1581923.25,
+          "adjusted_revenue": 1535783.2187499974
+        },
+        {
+          "budget": 200000,
+          "raw_revenue": 1696447.25,
+          "adjusted_revenue": 1613568.4374999972
+        },
+        {
+          "budget": 210000,
+          "raw_revenue": 1776592.5,
+          "adjusted_revenue": 1691353.656249997
+        },
+        {
+          "budget": 220000,
+          "raw_revenue": 1849704.5,
+          "adjusted_revenue": 1769138.8749999967
+        },
+        {
+          "budget": 230000,
+          "raw_revenue": 1862965.875,
+          "adjusted_revenue": 1846924.0937499965
+        },
+        {
+          "budget": 240000,
+          "raw_revenue": 1960598,
+          "adjusted_revenue": 1924709.3124999963
+        },
+        {
+          "budget": 250000,
+          "raw_revenue": 2082221.125,
+          "adjusted_revenue": 2002494.531249996
+        },
+        {
+          "budget": 260000,
+          "raw_revenue": 2137477,
+          "adjusted_revenue": 2080279.7499999958
+        },
+        {
+          "budget": 270000,
+          "raw_revenue": 2139492,
+          "adjusted_revenue": 2139491.9999999963
+        },
+        {
+          "budget": 280000,
+          "raw_revenue": 2198704.25,
+          "adjusted_revenue": 2198704.2499999963
+        },
+        {
+          "budget": 290000,
+          "raw_revenue": 2286716.25,
+          "adjusted_revenue": 2257916.4999999963
+        },
+        {
+          "budget": 300000,
+          "raw_revenue": 2354166.5,
+          "adjusted_revenue": 2317128.7499999963
+        },
+        {
+          "budget": 310000,
+          "raw_revenue": 2396109.5,
+          "adjusted_revenue": 2364674.599999996
+        },
+        {
+          "budget": 320000,
+          "raw_revenue": 2453340.5,
+          "adjusted_revenue": 2412220.4499999955
+        },
+        {
+          "budget": 330000,
+          "raw_revenue": 2500406,
+          "adjusted_revenue": 2459766.299999995
+        },
+        {
+          "budget": 340000,
+          "raw_revenue": 2523928.5,
+          "adjusted_revenue": 2507312.149999995
+        },
+        {
+          "budget": 350000,
+          "raw_revenue": 2554858,
+          "adjusted_revenue": 2554857.9999999944
+        },
+        {
+          "budget": 360000,
+          "raw_revenue": 2622333.5,
+          "adjusted_revenue": 2602403.849999994
+        },
+        {
+          "budget": 370000,
+          "raw_revenue": 2715747.75,
+          "adjusted_revenue": 2649949.699999993
+        },
+        {
+          "budget": 380000,
+          "raw_revenue": 2741640.5,
+          "adjusted_revenue": 2697495.549999992
+        },
+        {
+          "budget": 390000,
+          "raw_revenue": 2761942,
+          "adjusted_revenue": 2745041.3999999906
+        },
+        {
+          "budget": 400000,
+          "raw_revenue": 2769094.25,
+          "adjusted_revenue": 2769094.2499999935
+        }
+      ]
+    },
+    {
+      "platform": "Google",
+      "points": [
+        {
+          "budget": 110000,
+          "raw_revenue": 1205095.25,
+          "adjusted_revenue": 1130236.9375000005
+        },
+        {
+          "budget": 120000,
+          "raw_revenue": 1245906.625,
+          "adjusted_revenue": 1245906.625
+        },
+        {
+          "budget": 130000,
+          "raw_revenue": 1421485,
+          "adjusted_revenue": 1361576.3124999993
+        },
+        {
+          "budget": 140000,
+          "raw_revenue": 1538908,
+          "adjusted_revenue": 1477245.9999999986
+        },
+        {
+          "budget": 150000,
+          "raw_revenue": 1593936.875,
+          "adjusted_revenue": 1561527.1874999988
+        },
+        {
+          "budget": 160000,
+          "raw_revenue": 1684011.625,
+          "adjusted_revenue": 1645808.374999999
+        },
+        {
+          "budget": 170000,
+          "raw_revenue": 1731423,
+          "adjusted_revenue": 1730089.562499999
+        },
+        {
+          "budget": 180000,
+          "raw_revenue": 1814370.75,
+          "adjusted_revenue": 1814370.749999999
+        },
+        {
+          "budget": 190000,
+          "raw_revenue": 1949777.875,
+          "adjusted_revenue": 1898651.937499999
+        },
+        {
+          "budget": 200000,
+          "raw_revenue": 1982933.125,
+          "adjusted_revenue": 1982933.124999999
+        },
+        {
+          "budget": 210000,
+          "raw_revenue": 2127707,
+          "adjusted_revenue": 2067214.312499999
+        },
+        {
+          "budget": 220000,
+          "raw_revenue": 2190743.25,
+          "adjusted_revenue": 2151495.499999999
+        },
+        {
+          "budget": 230000,
+          "raw_revenue": 2248533.5,
+          "adjusted_revenue": 2214416.249999995
+        },
+        {
+          "budget": 240000,
+          "raw_revenue": 2285607.5,
+          "adjusted_revenue": 2243737.749999996
+        },
+        {
+          "budget": 250000,
+          "raw_revenue": 2278078.5,
+          "adjusted_revenue": 2273059.2499999967
+        },
+        {
+          "budget": 260000,
+          "raw_revenue": 2349928,
+          "adjusted_revenue": 2302380.7499999977
+        },
+        {
+          "budget": 270000,
+          "raw_revenue": 2358981.25,
+          "adjusted_revenue": 2331702.249999998
+        },
+        {
+          "budget": 280000,
+          "raw_revenue": 2367593,
+          "adjusted_revenue": 2361023.7499999986
+        },
+        {
+          "budget": 290000,
+          "raw_revenue": 2390345.25,
+          "adjusted_revenue": 2390345.249999999
+        },
+        {
+          "budget": 300000,
+          "raw_revenue": 2453612,
+          "adjusted_revenue": 2419666.7499999995
+        },
+        {
+          "budget": 310000,
+          "raw_revenue": 2548318.5,
+          "adjusted_revenue": 2448988.2499999995
+        },
+        {
+          "budget": 320000,
+          "raw_revenue": 2544766.25,
+          "adjusted_revenue": 2478309.7499999995
+        },
+        {
+          "budget": 330000,
+          "raw_revenue": 2528602,
+          "adjusted_revenue": 2507631.2499999995
+        },
+        {
+          "budget": 340000,
+          "raw_revenue": 2548917.5,
+          "adjusted_revenue": 2536952.7499999995
+        },
+        {
+          "budget": 350000,
+          "raw_revenue": 2605197,
+          "adjusted_revenue": 2566274.249999999
+        },
+        {
+          "budget": 360000,
+          "raw_revenue": 2595595.75,
+          "adjusted_revenue": 2595595.7499999986
+        },
+        {
+          "budget": 370000,
+          "raw_revenue": 2631867,
+          "adjusted_revenue": 2624917.2499999977
+        },
+        {
+          "budget": 380000,
+          "raw_revenue": 2664965.75,
+          "adjusted_revenue": 2654238.7499999967
+        },
+        {
+          "budget": 390000,
+          "raw_revenue": 2671251,
+          "adjusted_revenue": 2671250.999999998
+        },
+        {
+          "budget": 400000,
+          "raw_revenue": 2699643,
+          "adjusted_revenue": 2688263.2499999995
+        }
+      ]
+    },
+    {
+      "platform": "Instagram",
+      "points": [
+        {
+          "budget": 220000,
+          "raw_revenue": 1503214,
+          "adjusted_revenue": 1461431.749999995
+        },
+        {
+          "budget": 230000,
+          "raw_revenue": 1555399,
+          "adjusted_revenue": 1525281.7499999958
+        },
+        {
+          "budget": 240000,
+          "raw_revenue": 1632431.75,
+          "adjusted_revenue": 1589131.7499999965
+        },
+        {
+          "budget": 250000,
+          "raw_revenue": 1688527.375,
+          "adjusted_revenue": 1652981.7499999972
+        },
+        {
+          "budget": 260000,
+          "raw_revenue": 1765315.5,
+          "adjusted_revenue": 1716831.7499999977
+        },
+        {
+          "budget": 270000,
+          "raw_revenue": 1807948.625,
+          "adjusted_revenue": 1780681.7499999981
+        },
+        {
+          "budget": 280000,
+          "raw_revenue": 1873437.125,
+          "adjusted_revenue": 1844531.7499999986
+        },
+        {
+          "budget": 290000,
+          "raw_revenue": 1908381.75,
+          "adjusted_revenue": 1908381.749999999
+        },
+        {
+          "budget": 300000,
+          "raw_revenue": 2015696.5,
+          "adjusted_revenue": 1972231.7499999995
+        },
+        {
+          "budget": 310000,
+          "raw_revenue": 2036829.75,
+          "adjusted_revenue": 2036081.75
+        },
+        {
+          "budget": 320000,
+          "raw_revenue": 2137684,
+          "adjusted_revenue": 2099931.7500000005
+        },
+        {
+          "budget": 330000,
+          "raw_revenue": 2184038.5,
+          "adjusted_revenue": 2163781.750000001
+        },
+        {
+          "budget": 340000,
+          "raw_revenue": 2227751,
+          "adjusted_revenue": 2227631.7500000005
+        },
+        {
+          "budget": 350000,
+          "raw_revenue": 2319891.25,
+          "adjusted_revenue": 2291481.75
+        },
+        {
+          "budget": 360000,
+          "raw_revenue": 2357996,
+          "adjusted_revenue": 2355331.7499999995
+        },
+        {
+          "budget": 370000,
+          "raw_revenue": 2472596.25,
+          "adjusted_revenue": 2419181.749999999
+        },
+        {
+          "budget": 380000,
+          "raw_revenue": 2483031.75,
+          "adjusted_revenue": 2483031.7499999986
+        },
+        {
+          "budget": 390000,
+          "raw_revenue": 2564158.25,
+          "adjusted_revenue": 2546881.749999998
+        },
+        {
+          "budget": 400000,
+          "raw_revenue": 2646005.75,
+          "adjusted_revenue": 2610731.7499999977
+        }
+      ]
+    },
+    {
+      "platform": "TikTok",
+      "points": [
+        {
+          "budget": 150000,
+          "raw_revenue": 1377997,
+          "adjusted_revenue": 1266194.2375000173
+        },
+        {
+          "budget": 160000,
+          "raw_revenue": 1448704,
+          "adjusted_revenue": 1330907.0000000147
+        },
+        {
+          "budget": 170000,
+          "raw_revenue": 1501369.75,
+          "adjusted_revenue": 1395619.762500012
+        },
+        {
+          "budget": 180000,
+          "raw_revenue": 1569839.25,
+          "adjusted_revenue": 1460332.5250000095
+        },
+        {
+          "budget": 190000,
+          "raw_revenue": 1598400.25,
+          "adjusted_revenue": 1525045.2875000068
+        },
+        {
+          "budget": 200000,
+          "raw_revenue": 1658315.875,
+          "adjusted_revenue": 1589758.0500000042
+        },
+        {
+          "budget": 210000,
+          "raw_revenue": 1695805,
+          "adjusted_revenue": 1654470.8125000016
+        },
+        {
+          "budget": 220000,
+          "raw_revenue": 1799333.375,
+          "adjusted_revenue": 1719183.574999999
+        },
+        {
+          "budget": 230000,
+          "raw_revenue": 1847982,
+          "adjusted_revenue": 1783896.3374999964
+        },
+        {
+          "budget": 240000,
+          "raw_revenue": 1927468.5,
+          "adjusted_revenue": 1848609.0999999938
+        },
+        {
+          "budget": 250000,
+          "raw_revenue": 1935311.875,
+          "adjusted_revenue": 1913321.8624999912
+        },
+        {
+          "budget": 260000,
+          "raw_revenue": 1978034.625,
+          "adjusted_revenue": 1978034.6249999886
+        },
+        {
+          "budget": 270000,
+          "raw_revenue": 2111947.5,
+          "adjusted_revenue": 2042747.387499986
+        },
+        {
+          "budget": 280000,
+          "raw_revenue": 2155949.5,
+          "adjusted_revenue": 2107460.1499999836
+        },
+        {
+          "budget": 290000,
+          "raw_revenue": 2264621.5,
+          "adjusted_revenue": 2172172.912499981
+        },
+        {
+          "budget": 300000,
+          "raw_revenue": 2320498.25,
+          "adjusted_revenue": 2236885.6749999784
+        },
+        {
+          "budget": 310000,
+          "raw_revenue": 2359590,
+          "adjusted_revenue": 2301598.437499976
+        },
+        {
+          "budget": 320000,
+          "raw_revenue": 2428852,
+          "adjusted_revenue": 2366311.199999973
+        },
+        {
+          "budget": 330000,
+          "raw_revenue": 2454399.25,
+          "adjusted_revenue": 2431023.9624999706
+        },
+        {
+          "budget": 340000,
+          "raw_revenue": 2552398.75,
+          "adjusted_revenue": 2495736.724999968
+        },
+        {
+          "budget": 350000,
+          "raw_revenue": 2579960.5,
+          "adjusted_revenue": 2560449.4874999654
+        },
+        {
+          "budget": 360000,
+          "raw_revenue": 2625162.25,
+          "adjusted_revenue": 2625162.2499999627
+        },
+        {
+          "budget": 370000,
+          "raw_revenue": 2723969,
+          "adjusted_revenue": 2689875.01249996
+        },
+        {
+          "budget": 380000,
+          "raw_revenue": 2773925,
+          "adjusted_revenue": 2740858.1312499596
+        },
+        {
+          "budget": 390000,
+          "raw_revenue": 2791841.25,
+          "adjusted_revenue": 2791841.24999996
+        },
+        {
+          "budget": 400000,
+          "raw_revenue": 2876072.5,
+          "adjusted_revenue": 2842824.3687499594
+        }
+      ]
+    },
+    {
+      "platform": "YouTube",
+      "points": [
+        {
+          "budget": 80000,
+          "raw_revenue": 784000.1875,
+          "adjusted_revenue": 754286.9999999999
+        },
+        {
+          "budget": 90000,
+          "raw_revenue": 852018.125,
+          "adjusted_revenue": 833371.125
+        },
+        {
+          "budget": 100000,
+          "raw_revenue": 912455.25,
+          "adjusted_revenue": 912455.25
+        },
+        {
+          "budget": 110000,
+          "raw_revenue": 1054843.75,
+          "adjusted_revenue": 991539.375
+        },
+        {
+          "budget": 120000,
+          "raw_revenue": 1124354.75,
+          "adjusted_revenue": 1070623.5
+        },
+        {
+          "budget": 130000,
+          "raw_revenue": 1149707.625,
+          "adjusted_revenue": 1149707.6249999998
+        },
+        {
+          "budget": 140000,
+          "raw_revenue": 1230960.5,
+          "adjusted_revenue": 1228791.7499999995
+        },
+        {
+          "budget": 150000,
+          "raw_revenue": 1350828.5,
+          "adjusted_revenue": 1307875.8749999993
+        },
+        {
+          "budget": 160000,
+          "raw_revenue": 1405718,
+          "adjusted_revenue": 1384915.9999999993
+        },
+        {
+          "budget": 170000,
+          "raw_revenue": 1430511,
+          "adjusted_revenue": 1430510.9999999993
+        },
+        {
+          "budget": 180000,
+          "raw_revenue": 1476106,
+          "adjusted_revenue": 1476105.9999999993
+        },
+        {
+          "budget": 190000,
+          "raw_revenue": 1502144.875,
+          "adjusted_revenue": 1502144.8749999993
+        },
+        {
+          "budget": 200000,
+          "raw_revenue": 1585432.25,
+          "adjusted_revenue": 1528151.6562500002
+        },
+        {
+          "budget": 210000,
+          "raw_revenue": 1624865.5,
+          "adjusted_revenue": 1554158.4375
+        },
+        {
+          "budget": 220000,
+          "raw_revenue": 1610320.875,
+          "adjusted_revenue": 1580165.2187499998
+        },
+        {
+          "budget": 230000,
+          "raw_revenue": 1606172,
+          "adjusted_revenue": 1606171.9999999993
+        },
+        {
+          "budget": 240000,
+          "raw_revenue": 1653770.375,
+          "adjusted_revenue": 1632178.7812499988
+        },
+        {
+          "budget": 250000,
+          "raw_revenue": 1687050.625,
+          "adjusted_revenue": 1658185.5624999981
+        },
+        {
+          "budget": 260000,
+          "raw_revenue": 1709353.25,
+          "adjusted_revenue": 1684192.3437499974
+        },
+        {
+          "budget": 270000,
+          "raw_revenue": 1735665.75,
+          "adjusted_revenue": 1707111.3697916637
+        },
+        {
+          "budget": 280000,
+          "raw_revenue": 1737938.5,
+          "adjusted_revenue": 1730030.39583333
+        },
+        {
+          "budget": 290000,
+          "raw_revenue": 1760624.875,
+          "adjusted_revenue": 1752949.4218749963
+        },
+        {
+          "budget": 300000,
+          "raw_revenue": 1789656.25,
+          "adjusted_revenue": 1775868.4479166623
+        },
+        {
+          "budget": 310000,
+          "raw_revenue": 1803530.125,
+          "adjusted_revenue": 1798787.4739583284
+        },
+        {
+          "budget": 320000,
+          "raw_revenue": 1821706.5,
+          "adjusted_revenue": 1821706.4999999944
+        },
+        {
+          "budget": 330000,
+          "raw_revenue": 1849356.5,
+          "adjusted_revenue": 1844625.5260416605
+        },
+        {
+          "budget": 340000,
+          "raw_revenue": 1889007.625,
+          "adjusted_revenue": 1867544.5520833265
+        },
+        {
+          "budget": 350000,
+          "raw_revenue": 1914043.75,
+          "adjusted_revenue": 1890463.5781249925
+        },
+        {
+          "budget": 360000,
+          "raw_revenue": 1925893.75,
+          "adjusted_revenue": 1913382.6041666586
+        },
+        {
+          "budget": 370000,
+          "raw_revenue": 1950427.875,
+          "adjusted_revenue": 1936301.6302083246
+        },
+        {
+          "budget": 380000,
+          "raw_revenue": 1964526,
+          "adjusted_revenue": 1939591.8151041535
+        },
+        {
+          "budget": 390000,
+          "raw_revenue": 1942882,
+          "adjusted_revenue": 1942881.9999999823
+        },
+        {
+          "budget": 400000,
+          "raw_revenue": 2004361.625,
+          "adjusted_revenue": 1946172.1848958111
+        }
+      ]
+    }
+  ],
+  "uncertainty": "Not quantified",
+  "notice": "Simulated estimate — not a real-world revenue guarantee",
+  "limitations": [
+    "Recommendations only; no ad budgets are changed.",
+    "Uncertainty is not quantified. Forecast differences are estimates, not observed gains.",
+    "Platform attribution can overlap. Summed attributed revenue is not unique store sales.",
+    "Observational predictions do not establish causal returns from reallocating spend.",
+    "The representative training-day mix repeats unchanged each day; no campaign selection, audience interaction, cross-platform substitution or new-campaign effect is modeled.",
+    "Supported spend uses platform-wide training bounds; context-specific support and future seasonality are not independently validated. Review campaign execution separately.",
+    "Monotonicity and diminishing returns are planning assumptions. Adjusted curves are conservative relative to sampled raw outputs, not statistical lower confidence bounds."
+  ],
+  "prediction_rows": 20860,
+  "elapsed_seconds": 0.20527154200044606
+}

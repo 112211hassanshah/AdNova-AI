@@ -1,0 +1,36 @@
+{
+  "checked_at": "2026-10-30T14:33:30.878Z",
+  "results": [
+    {
+      "command": "npm run check",
+      "exit_code": 0,
+      "seconds": 3.02
+    },
+    {
+      "command": ".venv/bin/python -m pytest",
+      "exit_code": 0,
+      "seconds": 24.256
+    },
+    {
+      "command": ".venv/bin/ruff check backend scripts",
+      "exit_code": 0,
+      "seconds": 0.011
+    },
+    {
+      "command": "npm run format:check",
+      "exit_code": 0,
+      "seconds": 0.636
+    },
+    {
+      "command": "npm run build",
+      "exit_code": 0,
+      "seconds": 2.117
+    }
+  ],
+  "backend_tests_passed": 189,
+  "backend_tests_skipped": 0,
+  "commerce_tests_passed": 25,
+  "browser_commerce_checks": 23,
+  "browser_regression_checks": 47,
+  "note": "Final full verifier including local Spark/process tests. Commerce outcomes use explicitly fictional fixtures; not merchant validation."
+}

@@ -1,0 +1,1051 @@
+{
+  "id": "4740cb0d2a1646ea9739e5564ccfc253",
+  "status": "succeeded",
+  "stage": "complete",
+  "created_at": "2026-10-28T16:35:27.726572+00:00",
+  "updated_at": "2026-10-28T16:35:29.359164+00:00",
+  "completed_at": "2026-10-28T16:35:29.359157+00:00",
+  "config": {
+    "dataset_id": "7e11cab6e0b44ff1a986f100e4d16145",
+    "seed": 42,
+    "as_of_date": "2026-10-28",
+    "label_lag_days": 7
+  },
+  "dataset": {
+    "id": "7e11cab6e0b44ff1a986f100e4d16145",
+    "workspace_id": "local",
+    "name": "Pakistan campaign demo",
+    "source": "synthetic_generator",
+    "is_synthetic": true,
+    "original_filename": null,
+    "import_profile": null,
+    "imported_at": "2026-10-28T13:33:38.171244+00:00",
+    "currency": "PKR",
+    "original_currency": "PKR",
+    "exchange_rate": 1,
+    "date_granularity": "daily",
+    "date_start": "2026-01-01",
+    "date_end": "2026-03-31",
+    "rows": 10000,
+    "conversion_definition": "click-attributed purchases",
+    "attribution_window": "synthetic same-day click",
+    "revenue_source": "synthetic",
+    "coverage": {
+      "impressions": 1,
+      "clicks": 1,
+      "spend": 1,
+      "conversions": 1,
+      "revenue": 1,
+      "age": 1,
+      "gender": 1,
+      "city": 1,
+      "device": 1
+    },
+    "warnings": [
+      "Synthetic demo: simulated results do not demonstrate real business performance."
+    ],
+    "data_ready_for_revenue": true,
+    "options": {
+      "campaign": [
+        "Campaign 001",
+        "Campaign 002",
+        "Campaign 003",
+        "Campaign 004",
+        "Campaign 005",
+        "Campaign 006",
+        "Campaign 007",
+        "Campaign 008",
+        "Campaign 009",
+        "Campaign 010",
+        "Campaign 011",
+        "Campaign 012",
+        "Campaign 013",
+        "Campaign 014",
+        "Campaign 015",
+        "Campaign 016",
+        "Campaign 017",
+        "Campaign 018",
+        "Campaign 019",
+        "Campaign 020",
+        "Campaign 021",
+        "Campaign 022",
+        "Campaign 023",
+        "Campaign 024",
+        "Campaign 025",
+        "Campaign 026",
+        "Campaign 027",
+        "Campaign 028",
+        "Campaign 029",
+        "Campaign 030",
+        "Campaign 031",
+        "Campaign 032",
+        "Campaign 033",
+        "Campaign 034",
+        "Campaign 035",
+        "Campaign 036",
+        "Campaign 037",
+        "Campaign 038",
+        "Campaign 039",
+        "Campaign 040",
+        "Campaign 041",
+        "Campaign 042",
+        "Campaign 043",
+        "Campaign 044",
+        "Campaign 045",
+        "Campaign 046",
+        "Campaign 047",
+        "Campaign 048",
+        "Campaign 049",
+        "Campaign 050",
+        "Campaign 051",
+        "Campaign 052",
+        "Campaign 053",
+        "Campaign 054",
+        "Campaign 055",
+        "Campaign 056",
+        "Campaign 057",
+        "Campaign 058",
+        "Campaign 059",
+        "Campaign 060",
+        "Campaign 061",
+        "Campaign 062",
+        "Campaign 063",
+        "Campaign 064",
+        "Campaign 065",
+        "Campaign 066",
+        "Campaign 067",
+        "Campaign 068",
+        "Campaign 069",
+        "Campaign 070",
+        "Campaign 071",
+        "Campaign 072",
+        "Campaign 073",
+        "Campaign 074",
+        "Campaign 075",
+        "Campaign 076",
+        "Campaign 077",
+        "Campaign 078",
+        "Campaign 079",
+        "Campaign 080",
+        "Campaign 081",
+        "Campaign 082",
+        "Campaign 083",
+        "Campaign 084",
+        "Campaign 085",
+        "Campaign 086",
+        "Campaign 087",
+        "Campaign 088",
+        "Campaign 089",
+        "Campaign 090",
+        "Campaign 091",
+        "Campaign 092",
+        "Campaign 093",
+        "Campaign 094",
+        "Campaign 095",
+        "Campaign 096",
+        "Campaign 097",
+        "Campaign 098",
+        "Campaign 099",
+        "Campaign 100",
+        "Campaign 101",
+        "Campaign 102",
+        "Campaign 103",
+        "Campaign 104",
+        "Campaign 105",
+        "Campaign 106",
+        "Campaign 107",
+        "Campaign 108",
+        "Campaign 109",
+        "Campaign 110",
+        "Campaign 111",
+        "Campaign 112"
+      ],
+      "platform": [
+        "Facebook",
+        "Google",
+        "Instagram",
+        "TikTok",
+        "YouTube"
+      ],
+      "age": [
+        "18–24",
+        "25–34",
+        "35–44",
+        "45–54"
+      ],
+      "gender": [
+        "all",
+        "female",
+        "male"
+      ],
+      "city": [
+        "Faisalabad",
+        "Islamabad",
+        "Karachi",
+        "Lahore",
+        "Rawalpindi"
+      ],
+      "device": [
+        "desktop",
+        "mobile",
+        "tablet"
+      ]
+    },
+    "seed": 42
+  },
+  "result": {
+    "algorithm": "XGBoost",
+    "fallback_reason": null,
+    "parameters": {
+      "n_estimators": 180,
+      "max_depth": 5,
+      "learning_rate": 0.05,
+      "min_child_weight": 10,
+      "reg_lambda": 10,
+      "subsample": 1,
+      "colsample_bytree": 1,
+      "objective": "reg:squarederror",
+      "tree_method": "hist",
+      "n_jobs": 2,
+      "random_state": 42
+    },
+    "validation_candidates": [
+      {
+        "rmse": 10019.030709826942,
+        "parameters": {
+          "n_estimators": 180,
+          "max_depth": 3,
+          "learning_rate": 0.05,
+          "min_child_weight": 10,
+          "reg_lambda": 10,
+          "subsample": 1,
+          "colsample_bytree": 1,
+          "objective": "reg:squarederror",
+          "tree_method": "hist",
+          "n_jobs": 2,
+          "random_state": 42
+        }
+      },
+      {
+        "rmse": 9576.568868223236,
+        "parameters": {
+          "n_estimators": 180,
+          "max_depth": 5,
+          "learning_rate": 0.05,
+          "min_child_weight": 10,
+          "reg_lambda": 10,
+          "subsample": 1,
+          "colsample_bytree": 1,
+          "objective": "reg:squarederror",
+          "tree_method": "hist",
+          "n_jobs": 2,
+          "random_state": 42
+        }
+      }
+    ],
+    "artifact": "model.ubj",
+    "feature_schema_version": "campaign-context-v1",
+    "features": [
+      "platform",
+      "age",
+      "gender",
+      "city",
+      "device",
+      "spend",
+      "log_spend",
+      "weekday",
+      "month",
+      "year_day_sin",
+      "year_day_cos"
+    ],
+    "target": "Same-period platform-attributed revenue (PKR), conditioned on observed spend as a proxy for planned spend and pre-period context.",
+    "grain": "campaign × platform × day × reported segment",
+    "splits": {
+      "train": {
+        "rows": 6048,
+        "start": "2026-01-01",
+        "end": "2026-02-23"
+      },
+      "validation": {
+        "rows": 2016,
+        "start": "2026-02-24",
+        "end": "2026-03-13"
+      },
+      "test": {
+        "rows": 1936,
+        "start": "2026-03-14",
+        "end": "2026-03-31"
+      }
+    },
+    "coverage": {
+      "input_rows": 10000,
+      "eligible_rows": 10000,
+      "excluded_rows": 0,
+      "maturity_cutoff": "2026-10-28",
+      "label_lag_days": 0
+    },
+    "baseline": {
+      "global_rate": 6.92419802237312,
+      "platform_rates": {
+        "Facebook": 7.190932424670149,
+        "Google": 7.977025688933445,
+        "Instagram": 5.93845984442873,
+        "TikTok": 6.799115347235721,
+        "YouTube": 7.239650095541787
+      },
+      "prior_equivalent_rows": 20
+    },
+    "validation": {
+      "model": {
+        "rows": 2016,
+        "mae": 6309.980456755957,
+        "rmse": 9576.568868223236,
+        "wape": 0.4753946325822404
+      },
+      "baseline": {
+        "rows": 2016,
+        "mae": 7789.422663809691,
+        "rmse": 11039.08072192984,
+        "wape": 0.5868559737494607
+      },
+      "platforms": [
+        {
+          "platform": "Facebook",
+          "model": {
+            "rows": 504,
+            "mae": 6192.901411815826,
+            "rmse": 10199.368456682292,
+            "wape": 0.4961912453828391
+          },
+          "baseline": {
+            "rows": 504,
+            "mae": 7557.961708725916,
+            "rmse": 10895.782613196594,
+            "wape": 0.6055633996777813
+          }
+        },
+        {
+          "platform": "Google",
+          "model": {
+            "rows": 306,
+            "mae": 6731.184450938904,
+            "rmse": 9862.775047180043,
+            "wape": 0.42304110071019735
+          },
+          "baseline": {
+            "rows": 306,
+            "mae": 9319.147794325541,
+            "rmse": 12644.971598555054,
+            "wape": 0.5856892749451516
+          }
+        },
+        {
+          "platform": "Instagram",
+          "model": {
+            "rows": 486,
+            "mae": 5560.915252212713,
+            "rmse": 8151.296791085887,
+            "wape": 0.5146329431105197
+          },
+          "baseline": {
+            "rows": 486,
+            "mae": 6758.549276241241,
+            "rmse": 9730.837257415184,
+            "wape": 0.6254675619819098
+          }
+        },
+        {
+          "platform": "TikTok",
+          "model": {
+            "rows": 522,
+            "mae": 6519.486703940205,
+            "rmse": 9440.814260945634,
+            "wape": 0.4676150915491827
+          },
+          "baseline": {
+            "rows": 522,
+            "mae": 7673.424719335368,
+            "rmse": 10778.531180920283,
+            "wape": 0.550382164359527
+          }
+        },
+        {
+          "platform": "YouTube",
+          "model": {
+            "rows": 198,
+            "mae": 7243.328157804855,
+            "rmse": 10981.197841340569,
+            "wape": 0.4671351851475079
+          },
+          "baseline": {
+            "rows": 198,
+            "mae": 8850.613698144203,
+            "rmse": 12359.780846895143,
+            "wape": 0.5707919037323628
+          }
+        }
+      ]
+    },
+    "test": {
+      "model": {
+        "rows": 1936,
+        "mae": 5202.9864532704,
+        "rmse": 7195.2553841501085,
+        "wape": 0.5105497034858246
+      },
+      "baseline": {
+        "rows": 1936,
+        "mae": 7582.802764569082,
+        "rmse": 10415.53259743501,
+        "wape": 0.7440722242528275
+      },
+      "platforms": [
+        {
+          "platform": "Facebook",
+          "model": {
+            "rows": 483,
+            "mae": 5054.626453824567,
+            "rmse": 7133.899648104866,
+            "wape": 0.5286866056080234
+          },
+          "baseline": {
+            "rows": 483,
+            "mae": 7219.2418026273135,
+            "rmse": 9851.025943775085,
+            "wape": 0.7550936708303492
+          }
+        },
+        {
+          "platform": "Google",
+          "model": {
+            "rows": 294,
+            "mae": 5691.175504387057,
+            "rmse": 8163.92525545644,
+            "wape": 0.45404490659783026
+          },
+          "baseline": {
+            "rows": 294,
+            "mae": 10100.31659714954,
+            "rmse": 13544.932852418962,
+            "wape": 0.8058084489621081
+          }
+        },
+        {
+          "platform": "Instagram",
+          "model": {
+            "rows": 464,
+            "mae": 4342.964236550167,
+            "rmse": 6337.446078650112,
+            "wape": 0.5419954026491604
+          },
+          "baseline": {
+            "rows": 464,
+            "mae": 6120.851293102099,
+            "rmse": 8608.726410049338,
+            "wape": 0.7638730324419482
+          }
+        },
+        {
+          "platform": "TikTok",
+          "model": {
+            "rows": 502,
+            "mae": 5733.117990982845,
+            "rmse": 7492.0312889868665,
+            "wape": 0.5149109739028424
+          },
+          "baseline": {
+            "rows": 502,
+            "mae": 7512.538512864883,
+            "rmse": 10249.416907085528,
+            "wape": 0.6747268289656666
+          }
+        },
+        {
+          "platform": "YouTube",
+          "model": {
+            "rows": 193,
+            "mae": 5519.331403169781,
+            "rmse": 6919.468149551691,
+            "wape": 0.5026142048054417
+          },
+          "baseline": {
+            "rows": 193,
+            "mae": 8355.18108040022,
+            "rmse": 10698.605785489079,
+            "wape": 0.760858949748709
+          }
+        }
+      ]
+    },
+    "acceptance": {
+      "eligible": true,
+      "reasons": [],
+      "policy": "v1: ≥5% RMSE improvement on validation and test, WAPE ≤100%, platform support 20/5/5 and no platform test RMSE >110% of baseline."
+    },
+    "spend_ranges": {
+      "Facebook": {
+        "min": 132.42,
+        "max": 7079.17
+      },
+      "Google": {
+        "min": 354.79,
+        "max": 10378.42
+      },
+      "Instagram": {
+        "min": 245.22,
+        "max": 9505.76
+      },
+      "TikTok": {
+        "min": 246.78,
+        "max": 10717.14
+      },
+      "YouTube": {
+        "min": 365.56,
+        "max": 13060.63
+      }
+    },
+    "categories": [
+      [
+        "Facebook",
+        "Google",
+        "Instagram",
+        "TikTok",
+        "YouTube"
+      ],
+      [
+        "18–24",
+        "25–34",
+        "35–44",
+        "45–54"
+      ],
+      [
+        "all",
+        "female",
+        "male"
+      ],
+      [
+        "Faisalabad",
+        "Islamabad",
+        "Karachi",
+        "Lahore",
+        "Rawalpindi"
+      ],
+      [
+        "desktop",
+        "mobile",
+        "tablet"
+      ]
+    ],
+    "diagnostic_sample": [
+      {
+        "date": "2026-03-14",
+        "platform": "TikTok",
+        "actual": 4018.93,
+        "predicted": 3847.284912109375,
+        "baseline": 8725.508698568017
+      },
+      {
+        "date": "2026-03-14",
+        "platform": "Instagram",
+        "actual": 9277.01,
+        "predicted": 10205.3505859375,
+        "baseline": 13928.835718902921
+      },
+      {
+        "date": "2026-03-14",
+        "platform": "Google",
+        "actual": 5826.03,
+        "predicted": 5255.0888671875,
+        "baseline": 6821.314207120768
+      },
+      {
+        "date": "2026-03-14",
+        "platform": "Facebook",
+        "actual": 25374.99,
+        "predicted": 10943.5234375,
+        "baseline": 11781.69559390382
+      },
+      {
+        "date": "2026-03-15",
+        "platform": "Google",
+        "actual": 2770.73,
+        "predicted": 8176.4765625,
+        "baseline": 17288.607775625456
+      },
+      {
+        "date": "2026-03-15",
+        "platform": "Facebook",
+        "actual": 4433.24,
+        "predicted": 5156.2373046875,
+        "baseline": 8043.201735642055
+      },
+      {
+        "date": "2026-03-15",
+        "platform": "Facebook",
+        "actual": 11688.02,
+        "predicted": 6955.1748046875,
+        "baseline": 11152.848553366415
+      },
+      {
+        "date": "2026-03-16",
+        "platform": "YouTube",
+        "actual": 7545.27,
+        "predicted": 10864.2314453125,
+        "baseline": 14171.832251525915
+      },
+      {
+        "date": "2026-03-16",
+        "platform": "Facebook",
+        "actual": 9551.89,
+        "predicted": 6833.60595703125,
+        "baseline": 11927.383884827637
+      },
+      {
+        "date": "2026-03-16",
+        "platform": "Instagram",
+        "actual": 16839.9,
+        "predicted": 9201.1611328125,
+        "baseline": 4925.536748764522
+      },
+      {
+        "date": "2026-03-16",
+        "platform": "YouTube",
+        "actual": 12441.11,
+        "predicted": 16763.8984375,
+        "baseline": 11808.376081335342
+      },
+      {
+        "date": "2026-03-17",
+        "platform": "TikTok",
+        "actual": 1880.04,
+        "predicted": 7247.45166015625,
+        "baseline": 9709.74863623386
+      },
+      {
+        "date": "2026-03-17",
+        "platform": "Google",
+        "actual": 12485.5,
+        "predicted": 13699.65234375,
+        "baseline": 20084.55527959663
+      },
+      {
+        "date": "2026-03-17",
+        "platform": "Facebook",
+        "actual": 22602.8,
+        "predicted": 6176.7421875,
+        "baseline": 7086.1605392427045
+      },
+      {
+        "date": "2026-03-18",
+        "platform": "YouTube",
+        "actual": 16416.55,
+        "predicted": 24669.728515625,
+        "baseline": 17316.953442532133
+      },
+      {
+        "date": "2026-03-18",
+        "platform": "Instagram",
+        "actual": 6549.04,
+        "predicted": 16825.060546875,
+        "baseline": 10234.579234282251
+      },
+      {
+        "date": "2026-03-18",
+        "platform": "Instagram",
+        "actual": 6617.26,
+        "predicted": 7848.31640625,
+        "baseline": 11974.844891692092
+      },
+      {
+        "date": "2026-03-18",
+        "platform": "YouTube",
+        "actual": 11766.29,
+        "predicted": 19991.36328125,
+        "baseline": 25945.023633396922
+      },
+      {
+        "date": "2026-03-19",
+        "platform": "TikTok",
+        "actual": 1702.86,
+        "predicted": 4284.0712890625,
+        "baseline": 9656.171607297643
+      },
+      {
+        "date": "2026-03-19",
+        "platform": "TikTok",
+        "actual": 5060.65,
+        "predicted": 6153.03564453125,
+        "baseline": 5329.010626856413
+      },
+      {
+        "date": "2026-03-19",
+        "platform": "Google",
+        "actual": 2108.33,
+        "predicted": 9973.3408203125,
+        "baseline": 32865.50537891957
+      },
+      {
+        "date": "2026-03-20",
+        "platform": "Google",
+        "actual": 9975.9,
+        "predicted": 7392.4384765625,
+        "baseline": 14151.24357216793
+      },
+      {
+        "date": "2026-03-20",
+        "platform": "Facebook",
+        "actual": 2385.75,
+        "predicted": 2154.257080078125,
+        "baseline": 4214.821222071914
+      },
+      {
+        "date": "2026-03-20",
+        "platform": "TikTok",
+        "actual": 7742.3,
+        "predicted": 2541.645751953125,
+        "baseline": 6617.239011697166
+      },
+      {
+        "date": "2026-03-21",
+        "platform": "Google",
+        "actual": 1539.67,
+        "predicted": 4940.59619140625,
+        "baseline": 10811.661767495943
+      },
+      {
+        "date": "2026-03-21",
+        "platform": "Facebook",
+        "actual": 0,
+        "predicted": 2182.666015625,
+        "baseline": 5018.47982985305
+      },
+      {
+        "date": "2026-03-21",
+        "platform": "Facebook",
+        "actual": 10854.72,
+        "predicted": 20271.08984375,
+        "baseline": 14174.90981415829
+      },
+      {
+        "date": "2026-03-21",
+        "platform": "TikTok",
+        "actual": 0,
+        "predicted": 5677.26416015625,
+        "baseline": 9440.095721562491
+      },
+      {
+        "date": "2026-03-22",
+        "platform": "YouTube",
+        "actual": 0,
+        "predicted": 3239.148681640625,
+        "baseline": 8423.7672651686
+      },
+      {
+        "date": "2026-03-22",
+        "platform": "TikTok",
+        "actual": 10583.36,
+        "predicted": 9587.0830078125,
+        "baseline": 13723.470399167523
+      },
+      {
+        "date": "2026-03-22",
+        "platform": "Instagram",
+        "actual": 4832.69,
+        "predicted": 7181.66650390625,
+        "baseline": 8524.777875874332
+      },
+      {
+        "date": "2026-03-23",
+        "platform": "Facebook",
+        "actual": 0,
+        "predicted": 4002.3271484375,
+        "baseline": 7531.135437681293
+      },
+      {
+        "date": "2026-03-23",
+        "platform": "TikTok",
+        "actual": 2730.07,
+        "predicted": 5354.42431640625,
+        "baseline": 7695.578705768749
+      },
+      {
+        "date": "2026-03-23",
+        "platform": "Facebook",
+        "actual": 3759.74,
+        "predicted": 12857.486328125,
+        "baseline": 16005.649300155064
+      },
+      {
+        "date": "2026-03-23",
+        "platform": "Instagram",
+        "actual": 16692.71,
+        "predicted": 4158.48681640625,
+        "baseline": 13603.942580814226
+      },
+      {
+        "date": "2026-03-24",
+        "platform": "Facebook",
+        "actual": 24495.96,
+        "predicted": 10868.30859375,
+        "baseline": 6920.0500002328245
+      },
+      {
+        "date": "2026-03-24",
+        "platform": "TikTok",
+        "actual": 0,
+        "predicted": 6090.708984375,
+        "baseline": 8251.814332326105
+      },
+      {
+        "date": "2026-03-24",
+        "platform": "Instagram",
+        "actual": 3166.16,
+        "predicted": 5331.69140625,
+        "baseline": 6267.331750613194
+      },
+      {
+        "date": "2026-03-25",
+        "platform": "Instagram",
+        "actual": 13937.93,
+        "predicted": 11893.7275390625,
+        "baseline": 8622.228001921407
+      },
+      {
+        "date": "2026-03-25",
+        "platform": "Instagram",
+        "actual": 3876.5,
+        "predicted": 2574.337158203125,
+        "baseline": 4877.613377819982
+      },
+      {
+        "date": "2026-03-25",
+        "platform": "TikTok",
+        "actual": 6048.93,
+        "predicted": 3491.787841796875,
+        "baseline": 4879.589102404132
+      },
+      {
+        "date": "2026-03-26",
+        "platform": "TikTok",
+        "actual": 7783.53,
+        "predicted": 8737.9306640625,
+        "baseline": 13695.458043936911
+      },
+      {
+        "date": "2026-03-26",
+        "platform": "Instagram",
+        "actual": 4066.42,
+        "predicted": 6008.7578125,
+        "baseline": 11020.950086881503
+      },
+      {
+        "date": "2026-03-26",
+        "platform": "Google",
+        "actual": 6871.67,
+        "predicted": 3688.20068359375,
+        "baseline": 13241.623332858851
+      },
+      {
+        "date": "2026-03-26",
+        "platform": "YouTube",
+        "actual": 0,
+        "predicted": 7700.521484375,
+        "baseline": 14839.689972839646
+      },
+      {
+        "date": "2026-03-27",
+        "platform": "Google",
+        "actual": 5758.19,
+        "predicted": 10180.8017578125,
+        "baseline": 25113.910435955386
+      },
+      {
+        "date": "2026-03-27",
+        "platform": "TikTok",
+        "actual": 15520.62,
+        "predicted": 14451.1083984375,
+        "baseline": 17167.970225230612
+      },
+      {
+        "date": "2026-03-27",
+        "platform": "Facebook",
+        "actual": 16364.61,
+        "predicted": 4303.537109375,
+        "baseline": 8600.211361257005
+      },
+      {
+        "date": "2026-03-28",
+        "platform": "TikTok",
+        "actual": 37567.68,
+        "predicted": 19310.205078125,
+        "baseline": 13049.406103642574
+      },
+      {
+        "date": "2026-03-28",
+        "platform": "TikTok",
+        "actual": 12574.95,
+        "predicted": 14873.4228515625,
+        "baseline": 36706.24804281454
+      },
+      {
+        "date": "2026-03-28",
+        "platform": "Instagram",
+        "actual": 26684.78,
+        "predicted": 27331.951171875,
+        "baseline": 19186.272988372562
+      },
+      {
+        "date": "2026-03-28",
+        "platform": "TikTok",
+        "actual": 10684.47,
+        "predicted": 10894.8310546875,
+        "baseline": 12529.885699960292
+      },
+      {
+        "date": "2026-03-29",
+        "platform": "Facebook",
+        "actual": 14663.55,
+        "predicted": 8273.810546875,
+        "baseline": 15612.4491151741
+      },
+      {
+        "date": "2026-03-29",
+        "platform": "Facebook",
+        "actual": 3058.5,
+        "predicted": 6070.88623046875,
+        "baseline": 9064.88941453919
+      },
+      {
+        "date": "2026-03-29",
+        "platform": "TikTok",
+        "actual": 19177.38,
+        "predicted": 12015.8974609375,
+        "baseline": 15485.937079477966
+      },
+      {
+        "date": "2026-03-30",
+        "platform": "YouTube",
+        "actual": 12132.31,
+        "predicted": 19404.18359375,
+        "baseline": 13157.484876639555
+      },
+      {
+        "date": "2026-03-30",
+        "platform": "TikTok",
+        "actual": 2413.07,
+        "predicted": 1868.9366455078125,
+        "baseline": 5067.3806682947825
+      },
+      {
+        "date": "2026-03-30",
+        "platform": "Google",
+        "actual": 33703.38,
+        "predicted": 20988.236328125,
+        "baseline": 16005.503193560511
+      },
+      {
+        "date": "2026-03-30",
+        "platform": "Instagram",
+        "actual": 2422.26,
+        "predicted": 6565.396484375,
+        "baseline": 7678.903655633902
+      },
+      {
+        "date": "2026-03-31",
+        "platform": "YouTube",
+        "actual": 6770.75,
+        "predicted": 8870.6328125,
+        "baseline": 13757.072697552325
+      }
+    ],
+    "feature_importance": [
+      {
+        "feature": "spend",
+        "importance": 0.09015774726867676
+      },
+      {
+        "feature": "age_25–34",
+        "importance": 0.06597501784563065
+      },
+      {
+        "feature": "gender_all",
+        "importance": 0.061757732182741165
+      },
+      {
+        "feature": "gender_female",
+        "importance": 0.061145514249801636
+      },
+      {
+        "feature": "platform_Google",
+        "importance": 0.057815566658973694
+      },
+      {
+        "feature": "city_Lahore",
+        "importance": 0.05354767665266991
+      },
+      {
+        "feature": "age_18–24",
+        "importance": 0.05035611614584923
+      },
+      {
+        "feature": "city_Islamabad",
+        "importance": 0.050265878438949585
+      },
+      {
+        "feature": "platform_Instagram",
+        "importance": 0.04747571796178818
+      },
+      {
+        "feature": "city_Faisalabad",
+        "importance": 0.04676646366715431
+      },
+      {
+        "feature": "platform_YouTube",
+        "importance": 0.04282752424478531
+      },
+      {
+        "feature": "age_35–44",
+        "importance": 0.04151955991983414
+      },
+      {
+        "feature": "city_Rawalpindi",
+        "importance": 0.03883275389671326
+      },
+      {
+        "feature": "platform_TikTok",
+        "importance": 0.038435500115156174
+      },
+      {
+        "feature": "gender_male",
+        "importance": 0.036949578672647476
+      }
+    ],
+    "campaign_overlap_count": 112,
+    "versions": {
+      "xgboost": "3.4.1",
+      "scikit-learn": "1.9.1",
+      "numpy": "2.5.4",
+      "pandas": "2.3.3"
+    },
+    "elapsed_seconds": 0.24250049999682233,
+    "limitations": [
+      "Observed spend is a proxy for planned spend; targeting must be specified before the day.",
+      "Temporal evaluation covers later dates, not unseen campaigns or causal budget uplift.",
+      "Prediction uncertainty is not quantified. Attribution/selection bias and domain shift remain.",
+      "Campaign × platform × day × reported segment is the prediction grain. Do not pass a whole platform budget as one campaign row; Phase 4 must specify a context/row allocation policy.",
+      "Campaign IDs, outcomes, lagged metrics and simulator truth are excluded from features.",
+      "Synthetic estimate: learns the simulator; not evidence of real-business accuracy."
+    ],
+    "recommendations_enabled": false,
+    "recommendations_reason": "Budget allocation is Phase 4; no live spending actions.",
+    "uncertainty": "Not quantified",
+    "hashes": {
+      "model.ubj": "0683d0c6a4c28ed8a524da7c2f4f8808d26eb8b00e5e7c340b1e692a956c5f6b",
+      "preprocessing.json": "1fe63bc90506cab2b12b28a1ff9d6174bef1f7b9aa626f55182bafa3d078121a",
+      "holdout.parquet": "43936854b2db3391e50cf5002a8ce115aee1a034d3516848410bb0db25e6f1bd"
+    }
+  },
+  "message": "Training and holdout evaluation completed.",
+  "cancel_requested": false,
+  "input_sha256": "0f7df119d24b31658e48949e51cfcca81c83ae7d8b73d2dda174ac9502e95a4e"
+}

@@ -1,0 +1,245 @@
+{
+  "recorded_at": "2026-10-28T14:26:58.251Z",
+  "browser": "Chromium in-app browser; CUA with Playwright locator assertions",
+  "notes": [
+    "Native keyboard date editing commits correctly. CUA date fill alone updated the DOM without committing React changes; date validation was verified using native keyboard input.",
+    "Expected HTTP 422 responses during validation checks are not JavaScript runtime errors."
+  ],
+  "checks": [
+    {
+      "check": "lab responsive width",
+      "horizontalOverflow": false,
+      "pageWidth": 1425,
+      "width": 1440
+    },
+    {
+      "check": "lab responsive width",
+      "horizontalOverflow": false,
+      "pageWidth": 1265,
+      "width": 1280
+    },
+    {
+      "check": "lab responsive width",
+      "horizontalOverflow": false,
+      "pageWidth": 1009,
+      "width": 1024
+    },
+    {
+      "check": "lab responsive width",
+      "horizontalOverflow": false,
+      "pageWidth": 753,
+      "width": 768
+    },
+    {
+      "check": "lab responsive width",
+      "horizontalOverflow": false,
+      "pageWidth": 415,
+      "width": 430
+    },
+    {
+      "check": "lab responsive width",
+      "horizontalOverflow": false,
+      "pageWidth": 375,
+      "width": 390
+    },
+    {
+      "check": "lab responsive width",
+      "horizontalOverflow": false,
+      "pageWidth": 360,
+      "width": 375
+    },
+    {
+      "check": "real 10M generation job progress and cancellation",
+      "passed": true
+    },
+    {
+      "check": "native keyboard date input commits and invalid range is rejected",
+      "passed": true
+    },
+    {
+      "check": "no-engine submission disabled",
+      "passed": true
+    },
+    {
+      "check": "saved-input selection fixes its configuration and starts actual benchmark",
+      "passed": true
+    },
+    {
+      "check": "real saved-input benchmark completes three correct repeats per engine",
+      "passed": true
+    },
+    {
+      "check": "CSV report downloads all nine actual measurement rows",
+      "passed": true
+    },
+    {
+      "check": "Data Studio academic generation-only job completes with a separate saved lab input",
+      "passed": true
+    },
+    {
+      "check": "expanded academic Data Studio mobile layout",
+      "pageWidth": 375,
+      "width": 390,
+      "passed": true
+    },
+    {
+      "check": "10M lab input preview is bounded to 20 rows and keyboard-scrollable on mobile",
+      "rows": 20,
+      "contentWidth": 1908,
+      "scrollLeft": 40,
+      "width": 265
+    },
+    {
+      "check": "mobile drawer Escape closes and restores focus",
+      "passed": true
+    },
+    {
+      "check": "route renders without page overflow or application error",
+      "route": "/",
+      "alerts": [],
+      "contentWidth": 1425,
+      "title": "Let’s make your budget count.",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "check": "route renders without page overflow or application error",
+      "route": "/data-studio",
+      "alerts": [],
+      "contentWidth": 1425,
+      "title": "Data Studio",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "check": "route renders without page overflow or application error",
+      "route": "/campaigns",
+      "alerts": [],
+      "contentWidth": 1425,
+      "title": "Campaigns",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "check": "route renders without page overflow or application error",
+      "route": "/ml-studio",
+      "alerts": [],
+      "contentWidth": 1425,
+      "title": "ML Studio",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "check": "route renders without page overflow or application error",
+      "route": "/budget-optimizer",
+      "alerts": [],
+      "contentWidth": 1425,
+      "title": "Budget Optimizer",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "check": "route renders without page overflow or application error",
+      "route": "/big-data-lab",
+      "alerts": [],
+      "contentWidth": 1425,
+      "title": "Big Data Lab",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "check": "route renders without page overflow or application error",
+      "route": "/help",
+      "alerts": [],
+      "contentWidth": 1425,
+      "title": "Help & about",
+      "width": 1440,
+      "passed": true
+    },
+    {
+      "check": "route renders without page overflow or application error",
+      "route": "/",
+      "alerts": [],
+      "contentWidth": 360,
+      "title": "Let’s make your budget count.",
+      "width": 375,
+      "passed": true
+    },
+    {
+      "check": "route renders without page overflow or application error",
+      "route": "/data-studio",
+      "alerts": [],
+      "contentWidth": 360,
+      "title": "Data Studio",
+      "width": 375,
+      "passed": true
+    },
+    {
+      "check": "route renders without page overflow or application error",
+      "route": "/campaigns",
+      "alerts": [],
+      "contentWidth": 360,
+      "title": "Campaigns",
+      "width": 375,
+      "passed": true
+    },
+    {
+      "check": "route renders without page overflow or application error",
+      "route": "/ml-studio",
+      "alerts": [],
+      "contentWidth": 360,
+      "title": "ML Studio",
+      "width": 375,
+      "passed": true
+    },
+    {
+      "check": "route renders without page overflow or application error",
+      "route": "/budget-optimizer",
+      "alerts": [],
+      "contentWidth": 360,
+      "title": "Budget Optimizer",
+      "width": 375,
+      "passed": true
+    },
+    {
+      "check": "route renders without page overflow or application error",
+      "route": "/big-data-lab",
+      "alerts": [],
+      "contentWidth": 360,
+      "title": "Big Data Lab",
+      "width": 375,
+      "passed": true
+    },
+    {
+      "check": "route renders without page overflow or application error",
+      "route": "/help",
+      "alerts": [],
+      "contentWidth": 360,
+      "title": "Help & about",
+      "width": 375,
+      "passed": true
+    },
+    {
+      "check": "saved 10M result, five weighted platform totals, and throughput scale-chart table across all four sizes",
+      "platformRows": 5,
+      "passed": true
+    },
+    {
+      "check": "JSON report downloads saved 10M provenance, method and all engine repeats",
+      "passed": true
+    },
+    {
+      "check": "dataset deletion requires a concrete confirmation and Keep dataset dismisses it",
+      "passed": true
+    },
+    {
+      "check": "keyboard skip link focuses main content",
+      "passed": true
+    },
+    {
+      "check": "no uncaught JavaScript or hydration errors in captured browser logs",
+      "passed": true
+    }
+  ],
+  "runtime_errors": []
+}

@@ -1,0 +1,21 @@
+{
+  "checks": [
+    "Suggests channel for platform",
+    "Suggests spend_pkr for spend",
+    "Suggests revenue_pkr for revenue",
+    "Warns about weekly periods before validation",
+    "All 96 rows normalize without platform errors",
+    "Weekly totals are blocked from daily storage with an explicit explanation",
+    "Import validation fits 1440px without page overflow",
+    "Import validation fits 375px without page overflow",
+    "No captured page-level JavaScript errors"
+  ],
+  "errors": [],
+  "input_rows": 96,
+  "valid_metric_rows": 96,
+  "invalid_rows": 0,
+  "can_import": false,
+  "errors_by_field": [
+    "date_granularity"
+  ]
+}

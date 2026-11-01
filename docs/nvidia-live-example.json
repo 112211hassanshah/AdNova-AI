@@ -1,0 +1,65 @@
+{
+  "explanation": {
+    "text": "The backend-verified observations describe a synthetic performance report generated for a daily reporting period. All metric categories—including impressions, clicks, spend, conversions, revenue, ctr, cpc, cpa, cvr, and roas—are marked as available within the system. Across the five observed platforms—Facebook, Google, Instagram, TikTok, and YouTube—the consistent pattern is that attributed revenue exceeds ad spend. The report acknowledges that financial definitions are complete and that provenance review is not required, though it explicitly flags that the date and revenue fields are synthetic in nature.\n\nThe relationships presented in the data reflect observed revenue associations rather than causal business outcomes. The rules attached to the dataset clarify that missing values remain unavailable, that revenue is distinct from profit, and that historical associations do not prove causal uplift. Additionally, the synthetic nature of the results means they do not establish real business accuracy, and no live budgets or local results can be modified by any explanation derived from this report.",
+    "provider": "NVIDIA",
+    "model": "nvidia/nemotron-3.5-lightning-30b-a3b",
+    "generated_at": "2026-10-30T13:15:29.742758+00:00",
+    "summary_sha256": "ad6329e76275f8fdba0fff793cbbeb6e9525ef14b786020ef57523c7def5c7b6",
+    "dataset_id": "082551420d434758b3c1a0019ac7cd77",
+    "is_synthetic": true,
+    "notice": "AI-generated explanation. Check it against the source summary; it is not a new prediction or financial calculation."
+  },
+  "summary": {
+    "report_kind": "performance",
+    "is_synthetic": true,
+    "source_type": "synthetic",
+    "reporting_period": "daily",
+    "financial_definitions_complete": true,
+    "provenance_review_required": false,
+    "synthetic_components": {
+      "date_is_synthetic": true,
+      "revenue_is_synthetic": true
+    },
+    "metric_availability": {
+      "impressions": "available",
+      "clicks": "available",
+      "spend": "available",
+      "conversions": "available",
+      "revenue": "available",
+      "ctr": "available",
+      "cpc": "available",
+      "cpa": "available",
+      "cvr": "available",
+      "roas": "available"
+    },
+    "observed_revenue_relation": "attributed revenue exceeds ad spend",
+    "platform_observations": [
+      {
+        "platform": "Facebook",
+        "revenue_relation": "attributed revenue exceeds ad spend"
+      },
+      {
+        "platform": "Google",
+        "revenue_relation": "attributed revenue exceeds ad spend"
+      },
+      {
+        "platform": "Instagram",
+        "revenue_relation": "attributed revenue exceeds ad spend"
+      },
+      {
+        "platform": "TikTok",
+        "revenue_relation": "attributed revenue exceeds ad spend"
+      },
+      {
+        "platform": "YouTube",
+        "revenue_relation": "attributed revenue exceeds ad spend"
+      }
+    ],
+    "rules": [
+      "Missing values stay unavailable; revenue is not profit.",
+      "Historical associations do not prove causal uplift.",
+      "Synthetic results do not establish real business accuracy.",
+      "No live budgets are changed; explanations cannot modify any local result."
+    ]
+  }
+}

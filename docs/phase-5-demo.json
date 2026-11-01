@@ -1,0 +1,135 @@
+{
+  "recorded_at": "2026-10-30T06:23:54.982517+00:00",
+  "source": "Synthetic university demo; not real business performance",
+  "dataset_id": "b7b4ec6a23114d9c94f0463acea6da64",
+  "model_id": "1cf3528161df49ee9588c6d7dd9b20d4",
+  "algorithm": "XGBoost",
+  "holdout": {
+    "model": {
+      "r2": 0.437093046097649,
+      "rows": 1936,
+      "mae": 5202.9864532704,
+      "rmse": 7195.2553841501085,
+      "wape": 0.5105497034858246
+    },
+    "baseline": {
+      "r2": -0.17952500611083688,
+      "rows": 1936,
+      "mae": 7582.802764569082,
+      "rmse": 10415.53259743501,
+      "wape": 0.7440722242528275
+    },
+    "platforms": [
+      {
+        "platform": "Facebook",
+        "model": {
+          "r2": 0.4250795150387058,
+          "rows": 483,
+          "mae": 5054.626453824567,
+          "rmse": 7133.899648104866,
+          "wape": 0.5286866056080234
+        },
+        "baseline": {
+          "r2": -0.0962679493136307,
+          "rows": 483,
+          "mae": 7219.2418026273135,
+          "rmse": 9851.025943775085,
+          "wape": 0.7550936708303492
+        }
+      },
+      {
+        "platform": "Google",
+        "model": {
+          "r2": 0.5120992266464012,
+          "rows": 294,
+          "mae": 5691.175504387057,
+          "rmse": 8163.92525545644,
+          "wape": 0.45404490659783026
+        },
+        "baseline": {
+          "r2": -0.34303453250042026,
+          "rows": 294,
+          "mae": 10100.31659714954,
+          "rmse": 13544.932852418962,
+          "wape": 0.8058084489621081
+        }
+      },
+      {
+        "platform": "Instagram",
+        "model": {
+          "r2": 0.363439098508594,
+          "rows": 464,
+          "mae": 4342.964236550167,
+          "rmse": 6337.446078650112,
+          "wape": 0.5419954026491604
+        },
+        "baseline": {
+          "r2": -0.17459789311789442,
+          "rows": 464,
+          "mae": 6120.851293102099,
+          "rmse": 8608.726410049338,
+          "wape": 0.7638730324419482
+        }
+      },
+      {
+        "platform": "TikTok",
+        "model": {
+          "r2": 0.36622852510651616,
+          "rows": 502,
+          "mae": 5733.117990982845,
+          "rmse": 7492.0312889868665,
+          "wape": 0.5149109739028424
+        },
+        "baseline": {
+          "r2": -0.18612877353301704,
+          "rows": 502,
+          "mae": 7512.538512864883,
+          "rmse": 10249.416907085528,
+          "wape": 0.6747268289656666
+        }
+      },
+      {
+        "platform": "YouTube",
+        "model": {
+          "r2": 0.4509391810244231,
+          "rows": 193,
+          "mae": 5519.331403169781,
+          "rmse": 6919.468149551691,
+          "wape": 0.5026142048054417
+        },
+        "baseline": {
+          "r2": -0.3125909174613506,
+          "rows": 193,
+          "mae": 8355.18108040022,
+          "rmse": 10698.605785489079,
+          "wape": 0.760858949748709
+        }
+      }
+    ]
+  },
+  "plans": [
+    {
+      "id": "58eb025d6fc54eea884f312cf3b6c017",
+      "budget": 1000000,
+      "method": "XGBoost + adjusted response curves",
+      "estimated_revenue": 8260574.919846948,
+      "prediction_rows": 82957
+    },
+    {
+      "id": "db6ed1b151b741cf94cf7bb588fdcf38",
+      "budget": 54321.87,
+      "method": "Evidence-limited allocation \u00b7 no revenue forecast \u00b7 no ML",
+      "estimated_revenue": null,
+      "prediction_rows": 0
+    },
+    {
+      "id": "9cb4d2bda78243979fe5b599c466c0d7",
+      "budget": 500,
+      "method": "Evidence-limited allocation \u00b7 no revenue forecast \u00b7 no ML",
+      "estimated_revenue": null,
+      "prediction_rows": 0
+    }
+  ],
+  "benchmark_evidence": "docs/phase-2-benchmark-measurements.json",
+  "benchmarks_rerun": false
+}

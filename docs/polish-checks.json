@@ -1,0 +1,58 @@
+{
+  "checked_at": "2026-11-01T09:19:00.699255+00:00",
+  "scope": "Existing Phases 0\u20136 polish; no Phase 7 implementation",
+  "checks": [
+    {
+      "command": "npm run check",
+      "exit_code": 0
+    },
+    {
+      "command": ".venv/bin/python -m pytest --junitxml=reports/polish/pytest.xml",
+      "environment": "scripts/runtime-env.mjs pythonEnvironment (macOS OpenMP path)",
+      "exit_code": 0,
+      "passed": 195,
+      "skipped": 0
+    },
+    {
+      "command": ".venv/bin/ruff check backend scripts",
+      "exit_code": 0
+    },
+    {
+      "command": ".venv/bin/ruff format --check backend scripts",
+      "exit_code": 0
+    },
+    {
+      "command": "npm run format:check",
+      "exit_code": 0
+    },
+    {
+      "command": "npm run build",
+      "exit_code": 0,
+      "note": "Final build after contrast fixes; local execution access. Restricted initial build stalled and was terminated."
+    }
+  ],
+  "browser": {
+    "data_regression_checks": 23,
+    "weekly_ml_budget_checks": 24,
+    "commerce_checks": 23,
+    "polish_checks": 9,
+    "responsive_route_width_combinations": 63,
+    "page_errors": [],
+    "text_contrast": "Conservative composited gradient endpoint audit of visible HTML text and controls; excludes SVG chart text/complete accessibility certification"
+  },
+  "model": "Fresh labelled 10,000-row seed-42 XGBoost fit and saved-artifact reevaluation; see polish-model-results.json",
+  "optimizer": "Exact totals across UI/API scenarios; 40 exhaustive small nonuniform concave paisa comparisons and tie-order test",
+  "benchmarks": "Existing Spark/MapReduce tests actually ran; no new 10M performance benchmark claim",
+  "external_nvidia_calls": 0,
+  "merchant_validation": "Pending; no approved real export/reference provided",
+  "data_isolation": "Disposable ADS_DATA_DIR for browser/training; original workspace data/credentials not used for QA",
+  "issues_resolved": [
+    "Future records could rank allocation-only priorities when no observations were mature",
+    "Noninteractive journey and unclear optional training",
+    "Help depended on backend availability",
+    "Dark-card styling regression caught in visual review",
+    "Chart legends inherited low-contrast series colors",
+    "Audit-fixture metadata and glossary test assumption corrected"
+  ],
+  "remaining_failed_checks": []
+}

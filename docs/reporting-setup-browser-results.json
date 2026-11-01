@@ -1,0 +1,22 @@
+{
+  "results": [
+    "CSV import detects explicit Purchases and attribution rules and displays evidence",
+    "Detected answers stay tied to the current mapping and recorded rules cannot be overwritten",
+    "Generic conversions do not produce invented purchase or attribution answers",
+    "ML Studio offers plain-language questions and keeps training blocked while unsure",
+    "Unsure users can continue to working analytics",
+    "Guided setup fits 1440px without horizontal page overflow",
+    "Guided setup fits 1280px without horizontal page overflow",
+    "Guided setup fits 1024px without horizontal page overflow",
+    "Guided setup fits 768px without horizontal page overflow",
+    "Guided setup fits 430px without horizontal page overflow",
+    "Guided setup fits 390px without horizontal page overflow",
+    "Guided setup fits 375px without horizontal page overflow",
+    "Confirmed answers create a source-linked version and leave the original definitions intact",
+    "All previewed financial values are preserved through reporting setup",
+    "Saving answers enables readiness without automatically training a model",
+    "Answers and selected revision survive reload",
+    "No captured page-level JavaScript errors"
+  ],
+  "errors": []
+}

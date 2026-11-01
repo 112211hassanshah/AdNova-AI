@@ -1,0 +1,32 @@
+{
+  "checked_at": "2026-10-28T12:39:24.930Z",
+  "results": [
+    "Overview has no horizontal overflow at 1440px",
+    "Overview has no horizontal overflow at 1280px",
+    "Overview has no horizontal overflow at 1024px",
+    "Overview has no horizontal overflow at 768px",
+    "Overview has no horizontal overflow at 430px",
+    "Overview has no horizontal overflow at 390px",
+    "Overview has no horizontal overflow at 375px",
+    "/ renders at 1440px with correct navigation/layout",
+    "/data-studio renders at 1440px with correct navigation/layout",
+    "/campaigns renders at 1440px with correct navigation/layout",
+    "/ml-studio renders at 1440px with correct navigation/layout",
+    "/budget-optimizer renders at 1440px with correct navigation/layout",
+    "/big-data-lab renders at 1440px with correct navigation/layout",
+    "/help renders at 1440px with correct navigation/layout",
+    "/ renders at 375px with correct navigation/layout",
+    "/data-studio renders at 375px with correct navigation/layout",
+    "/campaigns renders at 375px with correct navigation/layout",
+    "/ml-studio renders at 375px with correct navigation/layout",
+    "/budget-optimizer renders at 375px with correct navigation/layout",
+    "/big-data-lab renders at 375px with correct navigation/layout",
+    "/help renders at 375px with correct navigation/layout",
+    "Source selection updates the explanation; unavailable actions stay disabled",
+    "Mobile drawer traps focus, restores focus on Escape and navigates/closes on selection",
+    "Help glossary and keyboard skip-to-content work",
+    "Backend outage is visible and retry recovers real workspace state",
+    "Loading state reflects an outstanding backend request",
+    "Unknown route has a recovery link; no browser JavaScript errors"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "checks": [
+    "Existing Facebook validation metrics show 1.33% improvement, provenance warning, and working planning link",
+    "Current 1,143-row Facebook file imports with synthetic dates/revenue retained",
+    "Facebook budget 500: exact allocation, no historical minimum, no unsupported revenue/ROAS",
+    "Facebook budget 5000: exact allocation, no historical minimum, no unsupported revenue/ROAS",
+    "Facebook budget 25000: exact allocation, no historical minimum, no unsupported revenue/ROAS",
+    "Facebook budget 1000000: exact allocation, no historical minimum, no unsupported revenue/ROAS",
+    "Facebook budget 5123.47: exact allocation, no historical minimum, no unsupported revenue/ROAS",
+    "Allocation-only result responsive at 1440px",
+    "Allocation-only result responsive at 1024px",
+    "Allocation-only result responsive at 768px",
+    "Allocation-only result responsive at 390px",
+    "Allocation-only result responsive at 375px",
+    "Explicit PKR 6,000 floor correctly rejects a PKR 500 budget"
+  ],
+  "errors": []
+}

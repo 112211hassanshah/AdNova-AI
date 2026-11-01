@@ -1,0 +1,653 @@
+{
+  "checked_at": "2026-11-01T09:17:35.951Z",
+  "checks": [
+    "Empty workspace offers working no-history guidance, including explicit fairness and first-campaign limits",
+    "First-time demo generation, review CTA and clickable journey reach real analytics and ML readiness without a key",
+    "Advanced sampling stays optional; actual PKR 500 allocation is exact, with no revenue claim and a readable interpretation",
+    "NVIDIA local summary works without credentials; approval resets on refresh and no explanation/provider call was made",
+    "All nine routes checked at seven widths for overflow, unique main/h1, form labels, rendered HTML text contrast and reduced-motion preference",
+    "Mobile navigation traps keyboard focus, closes on Escape and restores focus to its trigger",
+    "Help and its task guidance remain usable during a simulated backend outage",
+    "Forced-colors mode disables surface blur; opaque fallback remains available",
+    "No captured JavaScript page errors"
+  ],
+  "surfaces": [
+    {
+      "route": "overview",
+      "width": 1440,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "data-studio",
+      "width": 1440,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "campaigns",
+      "width": 1440,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "ml-studio",
+      "width": 1440,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "budget-optimizer",
+      "width": 1440,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "big-data-lab",
+      "width": 1440,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "commerce",
+      "width": 1440,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "ai-assistant",
+      "width": 1440,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "help",
+      "width": 1440,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "overview",
+      "width": 1280,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "data-studio",
+      "width": 1280,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "campaigns",
+      "width": 1280,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "ml-studio",
+      "width": 1280,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "budget-optimizer",
+      "width": 1280,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "big-data-lab",
+      "width": 1280,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "commerce",
+      "width": 1280,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "ai-assistant",
+      "width": 1280,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "help",
+      "width": 1280,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "overview",
+      "width": 1024,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "data-studio",
+      "width": 1024,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "campaigns",
+      "width": 1024,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "ml-studio",
+      "width": 1024,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "budget-optimizer",
+      "width": 1024,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "big-data-lab",
+      "width": 1024,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "commerce",
+      "width": 1024,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "ai-assistant",
+      "width": 1024,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "help",
+      "width": 1024,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "overview",
+      "width": 768,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "data-studio",
+      "width": 768,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "campaigns",
+      "width": 768,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "ml-studio",
+      "width": 768,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "budget-optimizer",
+      "width": 768,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "big-data-lab",
+      "width": 768,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "commerce",
+      "width": 768,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "ai-assistant",
+      "width": 768,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "help",
+      "width": 768,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "overview",
+      "width": 430,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "data-studio",
+      "width": 430,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "campaigns",
+      "width": 430,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "ml-studio",
+      "width": 430,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "budget-optimizer",
+      "width": 430,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "big-data-lab",
+      "width": 430,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "commerce",
+      "width": 430,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "ai-assistant",
+      "width": 430,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "help",
+      "width": 430,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "overview",
+      "width": 390,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "data-studio",
+      "width": 390,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "campaigns",
+      "width": 390,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "ml-studio",
+      "width": 390,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "budget-optimizer",
+      "width": 390,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "big-data-lab",
+      "width": 390,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "commerce",
+      "width": 390,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "ai-assistant",
+      "width": 390,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "help",
+      "width": 390,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "overview",
+      "width": 375,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "data-studio",
+      "width": 375,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "campaigns",
+      "width": 375,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "ml-studio",
+      "width": 375,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "budget-optimizer",
+      "width": 375,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "big-data-lab",
+      "width": 375,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "commerce",
+      "width": 375,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "ai-assistant",
+      "width": 375,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    },
+    {
+      "route": "help",
+      "width": 375,
+      "overflow": false,
+      "headings": 1,
+      "main": 1,
+      "unnamed": [],
+      "reducedMotion": true,
+      "lowContrast": []
+    }
+  ],
+  "page_errors": [],
+  "provider_calls": 0,
+  "notes": [
+    "Disposable ADS_DATA_DIR workspace; original merchant data and credentials unused",
+    "NVIDIA external service was not reverified; backend contract tests use a simulated provider",
+    "Responsive and keyboard audit is not a human usability study or full accessibility certification"
+  ]
+}

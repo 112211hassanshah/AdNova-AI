@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-10-30T13:15:36.189Z",
+  "checks": [
+    "AI route has a unique title and configured status without returning or prefilling the saved key",
+    "Real NVIDIA connection check succeeded without sending report data",
+    "Only the displayed synthetic aggregate summary is eligible; explanation starts disabled until approval",
+    "Actual hosted model explained the synthetic report; only final text displayed, numeric claims withheld and approval reset",
+    "Actual answer and summary remain contained at 1440px",
+    "Actual answer and summary remain contained at 1280px",
+    "Actual answer and summary remain contained at 1024px",
+    "Actual answer and summary remain contained at 768px",
+    "Actual answer and summary remain contained at 430px",
+    "Actual answer and summary remain contained at 390px",
+    "Actual answer and summary remain contained at 375px",
+    "Missing model/plan evidence shows genuine remedies and clears the previous AI answer",
+    "Simulated rate-limit UI state is recoverable and invents no answer; separate from real provider evidence",
+    "Mobile navigation includes the new AI route and closes with Escape",
+    "No selection leaves provider settings usable and requires data before explaining",
+    "All eight routes remain contained at 1440px with the additional navigation item",
+    "All eight routes remain contained at 375px with the additional navigation item"
+  ],
+  "errors": [],
+  "original_selection_restored": true
+}

@@ -1,0 +1,16 @@
+{
+  "name": "project2-advertising-optimizer",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "check": "npm --prefix frontend run check",
+    "build": "npm --prefix frontend run build",
+    "test:e2e": "node scripts/browser-phase5.mjs",
+    "test:e2e:nvidia": "node scripts/browser-nvidia.mjs",
+    "test:e2e:commerce": "node scripts/browser-phase6.mjs",
+    "verify": "node scripts/verify.mjs",
+    "demo": ".venv/bin/python scripts/demo_phase5.py",
+    "format:check": "node frontend/node_modules/prettier/bin/prettier.cjs --check frontend/components frontend/lib frontend/app scripts/*.mjs",
+    "test:e2e:polish": "node scripts/browser-polish.mjs"
+  }
+}

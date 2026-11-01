@@ -1,0 +1,29 @@
+{
+  "checks": [
+    "Alternative date/spend headers selected with visible confidence",
+    "Mapping responsive at 1440px",
+    "Mapping responsive at 375px",
+    "Weekly upload saved as 480 weekly records, no daily expansion",
+    "Actual uploaded weekly data fits XGBoost and displays genuine holdout metrics",
+    "ML results responsive at 1440px",
+    "ML results responsive at 375px",
+    "New plans have an empty budget input; no million-rupee default",
+    "UI amount 50000 reaches API/model and allocations total exactly; stale estimates hidden",
+    "UI amount 10000 reaches API/model and allocations total exactly; stale estimates hidden",
+    "UI amount 100000 reaches API/model and allocations total exactly; stale estimates hidden",
+    "UI amount 1000000 reaches API/model and allocations total exactly; stale estimates hidden",
+    "UI amount 54321.87 reaches API/model and allocations total exactly; stale estimates hidden",
+    "Budget changes update predictions without retraining",
+    "Budget result responsive at 1440px",
+    "Budget result responsive at 1024px",
+    "Budget result responsive at 768px",
+    "Budget result responsive at 390px",
+    "Budget result responsive at 375px",
+    "Explicit historical fallback is labelled no ML",
+    "Large budget remains feasible while unsupported revenue is withheld",
+    "Zero budget blocked before submission",
+    "All seven routes reviewed without page overflow at 1440px",
+    "All seven routes reviewed without page overflow at 375px"
+  ],
+  "errors": []
+}

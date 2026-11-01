@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-11-01T09:10:54.983Z",
+  "results": [
+    "Demo UI generates 10,000 real seeded synthetic rows across five platforms and saves/selects the dataset",
+    "Overview uses live backend spend, attributed revenue and weighted ROAS with a synthetic disclaimer",
+    "Server filters persist from Overview to Campaigns; sort, pagination, grouping and accessible chart table work",
+    "Filtered export downloads a source-labelled CSV from the backend",
+    "CSV preview, mapping, validation, explicit confirmation and save work; synthetic provenance is retained and missing revenue never becomes zero",
+    "Saved dataset selection survives page reload and remains separate from demo data",
+    "Manual mapping works; an invalid row blocks saving until explicit exclusion, revalidation and confirmation",
+    "Delete confirmation can be cancelled; confirmed deletion removes only the intended local dataset",
+    "Dataset switching and server-paginated raw previews work",
+    "Overview, Data Studio and Campaigns have no horizontal overflow at 1440px",
+    "Overview, Data Studio and Campaigns have no horizontal overflow at 1280px",
+    "Overview, Data Studio and Campaigns have no horizontal overflow at 1024px",
+    "Overview, Data Studio and Campaigns have no horizontal overflow at 768px",
+    "Overview, Data Studio and Campaigns have no horizontal overflow at 430px",
+    "Overview, Data Studio and Campaigns have no horizontal overflow at 390px",
+    "Overview, Data Studio and Campaigns have no horizontal overflow at 375px",
+    "Mobile drawer navigates correctly to the working Phase 3 training screen",
+    "Invalid date ranges explain the remedy; empty results and clear-filter recovery work",
+    "Help glossary and keyboard skip link remain functional",
+    "Workspace outage shows an error and retry recovers selected dataset analytics",
+    "Analytics failure has its own recoverable error state without inventing results",
+    "Analytics loading state reflects an actual outstanding request",
+    "Unknown routes retain a working recovery link"
+  ]
+}

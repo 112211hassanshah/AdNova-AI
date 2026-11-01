@@ -1,0 +1,198 @@
+{
+  "model_id": "0a07b09ec5924743941e6cb657488842",
+  "dataset_id": "02bf0150f9ac4da0b7f078981a7e52a3",
+  "original_model_sha256": "3f1642fda500dcadbf8adc891015ef4ca32c1871047848da559becc95106a39c",
+  "original_config": {
+    "dataset_id": "02bf0150f9ac4da0b7f078981a7e52a3",
+    "seed": 42,
+    "as_of_date": "2026-10-29",
+    "label_lag_days": 7
+  },
+  "original_splits": {
+    "train": {
+      "rows": 683,
+      "start": "2026-05-02",
+      "end": "2026-08-13"
+    },
+    "validation": {
+      "rows": 211,
+      "start": "2026-08-14",
+      "end": "2026-09-17"
+    },
+    "test": {
+      "rows": 218,
+      "start": "2026-09-18",
+      "end": "2026-10-22"
+    }
+  },
+  "exact_reloaded_metrics": {
+    "validation": {
+      "model": {
+        "r2": 0.4097383461307642,
+        "rows": 211,
+        "mae": 91.90324329538933,
+        "rmse": 161.551856012759,
+        "wape": 0.9061488007162218
+      },
+      "baseline": {
+        "r2": 0.3937656089848497,
+        "rows": 211,
+        "mae": 91.49630858765877,
+        "rmse": 163.72309713205098,
+        "wape": 0.9021365005605608
+      },
+      "platforms": [
+        {
+          "platform": "Facebook",
+          "model": {
+            "r2": 0.4097383461307642,
+            "rows": 211,
+            "mae": 91.90324329538933,
+            "rmse": 161.551856012759,
+            "wape": 0.9061488007162218
+          },
+          "baseline": {
+            "r2": 0.3937656089848497,
+            "rows": 211,
+            "mae": 91.49630858765877,
+            "rmse": 163.72309713205098,
+            "wape": 0.9021365005605608
+          }
+        }
+      ]
+    },
+    "test": {
+      "model": {
+        "r2": 0.46645512564240754,
+        "rows": 218,
+        "mae": 74.606857623529,
+        "rmse": 104.24612757257505,
+        "wape": 0.9086198302753811
+      },
+      "baseline": {
+        "r2": 0.12885819947345323,
+        "rows": 218,
+        "mae": 84.98017157168012,
+        "rmse": 133.2044954317434,
+        "wape": 1.034954044839456
+      },
+      "platforms": [
+        {
+          "platform": "Facebook",
+          "model": {
+            "r2": 0.46645512564240754,
+            "rows": 218,
+            "mae": 74.606857623529,
+            "rmse": 104.24612757257505,
+            "wape": 0.9086198302753811
+          },
+          "baseline": {
+            "r2": 0.12885819947345323,
+            "rows": 218,
+            "mae": 84.98017157168012,
+            "rmse": 133.2044954317434,
+            "wape": 1.034954044839456
+          }
+        }
+      ]
+    }
+  },
+  "acceptance": {
+    "eligible": false,
+    "reasons": [
+      "Validation RMSE must improve on the baseline by at least 5%."
+    ],
+    "policy": "v1: \u22655% RMSE improvement on validation and test, WAPE \u2264100%, platform support 20/5/5 and no platform test RMSE >110% of baseline."
+  },
+  "improvement_percent": {
+    "validation": 1.3261666541409034,
+    "test": 21.739782704261046
+  },
+  "baseline_independent_screen": {
+    "eligible": false,
+    "reasons": [
+      "Baseline test WAPE must be defined and at most 100%."
+    ],
+    "metrics": {
+      "validation": {
+        "baseline": {
+          "r2": 0.3937656089848497,
+          "rows": 211,
+          "mae": 91.49630858765877,
+          "rmse": 163.72309713205098,
+          "wape": 0.9021365005605608
+        },
+        "constant_mean": {
+          "r2": -0.0008844162525358801,
+          "rows": 211,
+          "mae": 102.77490580308508,
+          "rmse": 210.36894566240534,
+          "wape": 1.013341360955652
+        }
+      },
+      "test": {
+        "baseline": {
+          "r2": 0.12885819947345323,
+          "rows": 218,
+          "mae": 84.98017157168012,
+          "rmse": 133.2044954317434,
+          "wape": 1.034954044839456
+        },
+        "constant_mean": {
+          "r2": -0.00837188487239282,
+          "rows": 218,
+          "mae": 82.9831960992384,
+          "rmse": 143.3127465855462,
+          "wape": 1.0106333379683783
+        }
+      }
+    },
+    "baseline": {
+      "global_rate": 1.8520919378437948,
+      "platform_rates": {
+        "Facebook": 1.8520919378437948
+      },
+      "prior_equivalent_rows": 20
+    },
+    "policy": "baseline-v1: chronological 180/60/60 rows, per-platform 20/5/5, WAPE \u2264100% and RMSE better than train-mean on validation and test. An operational screen, not statistical confidence or causal validation."
+  },
+  "provenance": {
+    "original_rows": 1143,
+    "original_columns": [
+      "ad_id",
+      "xyz_campaign_id",
+      "fb_campaign_id",
+      "age",
+      "gender",
+      "interest",
+      "Impressions",
+      "Clicks",
+      "Spent",
+      "Total_Conversion",
+      "Approved_Conversion"
+    ],
+    "modified_sha256": "2ce6310924880c7b17c86b88dd0b5df7a85c1700550aefe63065b0b4d248d30a",
+    "modified_rows": 1143,
+    "unique_ad_ids": 1143,
+    "unique_internal_campaigns": 3,
+    "synthetic_date_rows": 1143,
+    "synthetic_revenue_rows": 1143,
+    "revenue_equals_100_times_approved_conversions": true,
+    "original_currency": "Not declared in original file; PKR was selected at import."
+  },
+  "reproduced_context": {
+    "date": "2026-01-02",
+    "reference_budget": 621434.1899999998,
+    "supported_min": 196017.99728400938,
+    "supported_max": 1221735.7413532787,
+    "row_spend_min": 132.42,
+    "row_spend_max": 7079.17,
+    "historical_spend": 2630635.59
+  },
+  "context_weights": {
+    "minimum": 0.008782152781133592,
+    "maximum": 0.07532660859873193,
+    "rows": 28
+  },
+  "note": "Read-only audit: original source/model/evaluation records remain unchanged. Synthetic dates do not establish temporal predictive validity."
+}

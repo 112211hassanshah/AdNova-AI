@@ -1,0 +1,50 @@
+{
+  "checked_at": "2026-10-30T06:31:21.342Z",
+  "results": [
+    {
+      "command": "npm run check",
+      "exit_code": 0,
+      "seconds": 3.097
+    },
+    {
+      "command": ".venv/bin/python -m pytest",
+      "exit_code": 0,
+      "seconds": 24.073
+    },
+    {
+      "command": ".venv/bin/ruff check backend scripts",
+      "exit_code": 0,
+      "seconds": 0.046
+    },
+    {
+      "command": "npm run format:check",
+      "exit_code": 0,
+      "seconds": 0.669
+    },
+    {
+      "command": "npm run build",
+      "exit_code": 0,
+      "seconds": 3.522
+    }
+  ],
+  "frontend_recheck_after_tick_precision_fix": {
+    "checked_at": "2026-10-30T06:35:04.856166+00:00",
+    "commands": [
+      "npm run check",
+      "npm run build",
+      "npm run format:check"
+    ],
+    "exit_code": 0,
+    "backend_note": "No backend code changed after the successful full 149-test verification."
+  },
+  "final_copy_recheck": {
+    "checked_at": "2026-10-30T06:38:10.959649+00:00",
+    "commands": [
+      "npm run check",
+      "npm run build",
+      "npm run format:check"
+    ],
+    "exit_code": 0,
+    "browser_check": "Data Studio current large-data guidance verified and screenshots refreshed at 1440/375px; selection restored."
+  }
+}
